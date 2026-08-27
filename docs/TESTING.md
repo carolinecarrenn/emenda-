@@ -37,11 +37,32 @@ running first.
 
 ---
 
-## 2. Test identities
+## 2. There are no accounts — how you actually get in
 
-These are the fixed mock records the whole app shares. The same worker and the
-same employer appear on the worker side and the manager side, so one action is
-visible from both roles.
+**You do not log in. You open the URL.**
+
+`/worker`, `/manager` and `/admin` all render immediately in a clean browser
+with no session, no cookie and no stored login. Verified in a fresh browser
+context: every role's screens opened with nothing in storage but the app's own
+language and report keys. There is no user table, no session, no permission
+check, and nothing to sign into.
+
+That has two consequences worth stating plainly:
+
+- **Anyone with the URL sees every role.** There is no access control to test,
+  and none to rely on. Whoever builds the real backend adds all of it.
+- **The names and codes below are not credentials.** They are display values
+  compiled into the bundle. They protect nothing, unlock nothing, and are safe
+  to paste into a ticket or a screenshot.
+
+The login screens exist because Figma specifies them, and they are worth
+testing as *screens* — the wrong-PIN message, the OTP countdown, the lockout
+copy. But submitting the right value only calls `navigate()`.
+
+### The fixed identity every screen shares
+
+The same worker and the same employer appear on the worker side and the manager
+side, so one action is visible from both roles.
 
 | Role | Value | Where it comes from |
 |---|---|---|
@@ -52,22 +73,90 @@ visible from both roles.
 | Company Admin | **Nadia** · PT Sakura Nusantara | `src/pages/admin/admin.mock.ts` |
 | "Today" in all mock data | **25 Aug 2026** | `src/data/caregiverReport.ts` |
 
-### Codes and inputs
+### The only four values you ever type
 
-| What | Value | Used on |
+Everything in the table above is *displayed* to you. These four are the ones a
+form actually reads — and only two of them are checked against anything:
+
+| Value | Type it into | Checked? |
 |---|---|---|
-| Login PIN | **482913** | `/auth/login` — prefilled; any other 6 digits shows *"Incorrect PIN…"* inline, staying on the page |
-| OTP code | **482913** | `/auth/otp` — first three digits are prefilled, type `913` to complete |
-| Phone | **+62 812 3456 7890** | `/auth/register`, shown masked as `+62 812••••7890` |
-| Employer invite code | **ABCJ-7K2M** | `/worker/employer/connect` |
-| Manager invite code | **KIT-CF-24A8** | `/manager/workers/invite` |
+| **482913** | `/auth/login` PIN field (already prefilled) | **yes** — any other 6 digits shows *"Incorrect PIN. Check the PIN and try again."* inline, without leaving the page |
+| **482913** | `/auth/otp` — `4 8 2` are prefilled, type `913` to finish | **yes** — a wrong code shows the invalid state |
+| **ABCJ-7K2M** | `/worker/employer/connect` invite field | no — any value proceeds |
+| **KIT-CF-24A8** | `/manager/workers/invite` — the code a manager hands out | no — display only |
 
-Nothing validates against a server. The PIN and OTP are checked against those
-constants purely so the "wrong code" screens are reachable.
+The phone number `+62 812 3456 7890` is prefilled on `/auth/register` and shown
+masked as `+62 812••••7890` on the OTP screen; you never have to type it.
+
+Those two comparisons live in `src/pages/auth/authMock.ts` and are the entire
+extent of validation in this app. They exist so the "wrong code" screens can be
+reached — not to keep anyone out. You can skip the whole funnel by opening
+`/worker` directly.
 
 ---
 
-## 3. The main flow to try first
+## 3. Where the data comes from
+
+Every number, name and list on screen is compiled into the bundle. There are
+**47 mock files, about 6,300 lines**, and no network call anywhere in the app.
+
+### Shared across roles — `src/data/`
+
+This is the only data two roles look at, and it is what makes the worker→manager
+loop work:
+
+| File | Holds |
+|---|---|
+| `caregiverReport.ts` | `WORKER`, `EMPLOYER`, `TODAY`, the report shape, and the three enum lists (`RESIDENT_CONDITIONS`, `REPORT_STATUSES`, `QUICK_NOTES`) |
+| `reportsStore.tsx` · `reportsContext.ts` | the live report store — seeded history plus anything you submit, persisted to `localStorage` |
+
+Change `EMPLOYER.name` here and it changes on both the worker and the manager
+side at once. That is deliberate: the mocks originally used several different
+employer names for one relationship, and they were unified so a single product
+state spans both roles.
+
+### Per section — one `*.mock.ts` beside its screens
+
+Everything else is local to its section and read by nothing outside it. The
+largest, by volume:
+
+| File | Lines |
+|---|---|
+| `manager/followup/followupMock.ts` | 578 |
+| `manager/ojt/ojtMock.ts` | 338 |
+| `manager/analytics/analytics.mock.ts` | 321 |
+| `worker/coin/coinMock.ts` | 286 |
+| `admin/employees/employees.mock.ts` | 281 |
+| `manager/workspace/workspaceMock.ts` | 267 |
+| `admin/teams/teams.mock.ts` | 266 |
+| `worker/knowledge/knowledgeMock.ts` | 242 |
+
+The rest follow the same pattern — one per section under `worker/`, `manager/`,
+`admin/`, plus `auth/authMock.ts`, `onboarding/onboardingIdMock.ts`,
+`access/accessMock.ts` and `public/publicMock.ts`.
+
+### The rule the mocks follow
+
+**Mock data is separated from UI, and it is never translated.** Names, EMENDA
+IDs, employer names, dates and record values stay exactly as written in all
+three languages — a Japanese user still sees "Putri Rahayu" and
+"EMD-26-8F4K2A". Only *enum-like* values translate for display
+(`Normal` → `通常`, `Meal reduced` → `食事減少`), through
+`src/i18n/terms.ts`, and even then the stored value stays English.
+
+So if you switch to 日本語 and a person's name stays in Latin script, that is
+correct, not a missed translation.
+
+### Replacing it with a real API
+
+Each mock exports plain constants, so a section can be cut over on its own: swap
+the export for a fetch, keep the shape. The one with real behaviour behind it is
+`reportsStore.tsx`, which owns submission and persistence — that is the piece a
+backend replaces first.
+
+---
+
+## 4. The main flow to try first
 
 The caregiver daily-report loop is the product's core, and it crosses both
 roles:
@@ -86,7 +175,7 @@ localStorage.removeItem("emenda-caregiver-reports");
 
 ---
 
-## 4. Languages
+## 5. Languages
 
 Three languages, switchable from the header on any public page and from
 `/auth/language`:
@@ -104,7 +193,7 @@ resident condition, quick notes) do translate — see `src/i18n/terms.ts`.
 
 ---
 
-## 5. Reaching states that need no server
+## 6. Reaching states that need no server
 
 Loading spinners, offline banners, server failures and OS permission prompts
 cannot be produced by clicking in a mock-data app. They are reachable by a URL
@@ -128,7 +217,7 @@ general / warehouse / food), and `?view=` on `/onboarding/id/my-id`.
 
 ---
 
-## 6. What to look at, by role
+## 7. What to look at, by role
 
 | Role | Entry | Notable |
 |---|---|---|
@@ -145,7 +234,7 @@ renders its own `<h1>` without hitting the router error boundary.
 
 ---
 
-## 7. Viewports
+## 8. Viewports
 
 The app is built for two widths, from two different Figma sources:
 
@@ -157,7 +246,7 @@ looks wrong, check which width you are at before filing it.
 
 ---
 
-## 8. What is verified, and what is not
+## 9. What is verified, and what is not
 
 At the current commit:
 
@@ -185,7 +274,7 @@ do not delete them to tidy the folder.
 
 ---
 
-## 9. Reporting a problem
+## 10. Reporting a problem
 
 Useful in a report, in rough order of value:
 
