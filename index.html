@@ -163,6 +163,8 @@ h1,h2,h3{font-family:var(--display);letter-spacing:-.025em;line-height:1.08}
 .dark .card p,.darker .card p{color:#C4DDD4}
 .dark .card .ci,.darker .card .ci{background:rgba(255,255,255,.1)}
 .dark .card .ci svg,.darker .card .ci svg{stroke:#7FD3BB}
+.dark .page-link-card .ci,.darker .page-link-card .ci{background:rgba(255,255,255,.1)}
+.dark .page-link-card .ci svg,.darker .page-link-card .ci svg{stroke:#7FD3BB}
 .card.problem{border-left:4px solid var(--consult)}
 .card.problem h3{color:var(--ink)}
 .card.clickable{cursor:pointer}
@@ -420,7 +422,9 @@ h1,h2,h3{font-family:var(--display);letter-spacing:-.025em;line-height:1.08}
 .page-links{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px}
 .page-link-card{padding:23px;border:1px solid var(--line);border-radius:17px;background:var(--card);transition:.18s;display:block}
 .page-link-card:hover{transform:translateY(-2px);border-color:#b9d9cd;box-shadow:var(--shadow-sm)}
-.page-link-card b{display:block;color:var(--emerald-deep);font-size:16px;margin:8px 0 5px}.page-link-card span{font-size:12.5px;color:var(--ink-soft);line-height:1.55}
+.page-link-card .ci{width:52px;height:52px;border-radius:14px;background:var(--emerald-tint);display:flex;align-items:center;justify-content:center;margin-bottom:16px;flex:none}
+.page-link-card .ci svg{width:24px;height:24px;stroke:var(--emerald);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;display:block}
+.page-link-card b{display:block;color:var(--emerald-deep);font-size:16px;margin:8px 0 5px}.page-link-card span{display:block;font-size:12.5px;color:var(--ink-soft);line-height:1.55}
 .flow-rail{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:30px;border:1px solid var(--line);border-radius:18px;overflow:hidden;background:var(--card)}
 .flow-rail>div{padding:24px;position:relative;border-right:1px solid var(--line)}
 .flow-rail>div:last-child{border-right:0}.flow-rail .n{font:700 10px var(--mono);color:var(--emerald);letter-spacing:.08em}.flow-rail b{display:block;margin:8px 0 5px;font-size:15px}.flow-rail p{font-size:12px;color:var(--ink-soft);line-height:1.55}
