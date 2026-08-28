@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>EMENDA — Connected Workforce Ecosystem</title>
+<title>EMENDA — Connected Workforce Operating Layer</title>
 <meta name="description" content="EMENDA connects workers, managers, employers, and organizations in one ecosystem — communication, reports, follow-up, and AI assistance across work and life in Japan.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -574,6 +574,90 @@ h1,h2,h3{font-family:var(--display);letter-spacing:-.025em;line-height:1.08}
   padding-right:7px!important;
 }
 
+
+/* ============ V14 · full product/company information architecture ============ */
+.catalog-hero{display:grid;grid-template-columns:1.15fr .85fr;gap:38px;align-items:center}
+.catalog-summary{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.catalog-stat{padding:22px;border:1px solid var(--line);border-radius:16px;background:var(--card)}
+.catalog-stat b{font:700 32px var(--display);color:var(--emerald-deep);display:block}
+.catalog-stat span{font-size:11.5px;color:var(--ink-soft);line-height:1.5}
+.module-list{display:grid;gap:12px;margin-top:28px}
+.module-row{display:grid;grid-template-columns:52px 1.1fr 2fr 90px 105px 105px;gap:14px;align-items:center;padding:15px 17px;border:1px solid var(--line);border-radius:14px;background:var(--card)}
+.module-row.head{background:transparent;border:0;border-bottom:1px solid var(--line);border-radius:0;padding-top:6px;padding-bottom:10px}
+.module-row.head>*{font:700 9px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--ink-faint)}
+.module-row .mn{font:700 10px var(--mono);color:var(--emerald)}
+.module-row .mt{font-weight:700;font-size:13px;color:var(--ink)}
+.module-row .md{font-size:11.5px;line-height:1.5;color:var(--ink-soft)}
+.module-row .count{font:700 12px var(--mono);color:var(--emerald-deep)}
+.module-row .rel{font:600 10px var(--mono);color:var(--ink-soft)}
+.module-row .st{font-size:10px}
+.positioning-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:28px}
+.position-col{border:1px solid var(--line);border-radius:18px;background:var(--card);overflow:hidden}
+.position-col h3{padding:20px 22px;background:var(--paper2);font-size:17px}
+.position-col.emenda h3{background:var(--emerald-tint);color:var(--emerald-deep)}
+.position-item{padding:15px 22px;border-top:1px solid var(--line-soft);font-size:12.5px;line-height:1.55;color:var(--ink-soft)}
+.position-item strong{display:block;color:var(--ink);margin-bottom:3px}
+.market-layers{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:30px}
+.market-layer{padding:26px;border-radius:18px;border:1px solid var(--line);background:var(--card)}
+.market-layer .layer-id{font:700 10px var(--mono);letter-spacing:.08em;color:var(--emerald)}
+.market-layer .amount{font:700 31px var(--display);color:var(--emerald-deep);display:block;margin:12px 0 6px}
+.market-layer h3{font-size:17px;margin-bottom:7px}.market-layer p{font-size:12px;line-height:1.6;color:var(--ink-soft)}
+.step-detail{display:grid;grid-template-columns:74px 1fr 1fr;gap:20px;padding:24px 0;border-bottom:1px solid var(--line)}
+.step-detail:last-child{border-bottom:0}
+.step-detail .sdn{font:700 12px var(--mono);color:var(--emerald)}
+.step-detail h3{font-size:18px}.step-detail p{font-size:12.5px;line-height:1.65;color:var(--ink-soft)}
+.kpi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px}
+.kpi-card{border:1px solid var(--line);border-radius:16px;background:var(--card);padding:20px}
+.kpi-card .kpi{font:700 10px var(--mono);color:var(--emerald);letter-spacing:.06em}
+.kpi-card h3{font-size:16px;margin:8px 0 6px}.kpi-card p{font-size:11.5px;line-height:1.55;color:var(--ink-soft)}
+.team-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:30px}
+.team-card{border:1px solid var(--line);border-radius:18px;background:var(--card);padding:28px}
+.team-card .role{font:700 10px var(--mono);letter-spacing:.08em;color:var(--emerald);margin-bottom:10px}
+.team-card h3{font-size:23px;margin-bottom:8px}.team-card p{font-size:13px;line-height:1.65;color:var(--ink-soft)}
+.scope-boundary{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:28px}
+.scope-box{border-radius:18px;padding:26px;border:1px solid var(--line)}
+.scope-box.in{background:var(--emerald-tint);border-color:#c2ddd3}.scope-box.out{background:#fff8f5;border-color:#f0d7cf}
+.scope-box h3{font-size:17px;margin-bottom:12px}.scope-box ul{list-style:none;display:grid;gap:9px}
+.scope-box li{font-size:12.5px;color:var(--ink-soft);line-height:1.5}
+.integration-map{display:grid;grid-template-columns:1fr 54px 1fr 54px 1fr;align-items:stretch;gap:12px;margin-top:32px}
+.integration-node{padding:24px;border:1px solid var(--line);border-radius:18px;background:var(--card)}
+.integration-node.core{background:var(--emerald-deep);color:white;border-color:var(--emerald-deep)}
+.integration-node.core h3{color:#fff}.integration-node.core p{color:#c8e2d8}
+.integration-node h3{font-size:17px;margin-bottom:7px}.integration-node p{font-size:12px;line-height:1.6;color:var(--ink-soft)}
+.integration-arrow{display:flex;align-items:center;justify-content:center;font-size:24px;color:var(--emerald);font-weight:800}
+.note-source{margin-top:16px;font-size:10.5px;line-height:1.6;color:var(--ink-faint)}
+@media(max-width:1000px){
+  .module-row{grid-template-columns:45px 1fr 1.8fr 70px 90px}.module-row>*:nth-child(6){display:none}
+  .catalog-hero{grid-template-columns:1fr}
+  .market-layers,.kpi-grid{grid-template-columns:1fr 1fr}
+  .integration-map{grid-template-columns:1fr}.integration-arrow{transform:rotate(90deg)}
+}
+@media(max-width:680px){
+  .module-row{grid-template-columns:38px 1fr 60px}.module-row .md,.module-row>*:nth-child(5),.module-row>*:nth-child(6){display:none}
+  .positioning-grid,.scope-boundary,.team-grid,.market-layers,.kpi-grid{grid-template-columns:1fr}
+  .step-detail{grid-template-columns:48px 1fr}.step-detail>*:nth-child(3){grid-column:2}
+}
+
+\n/* ============ V15 · exhaustive detail system ============ */
+.page-toc{position:relative;margin-top:30px;padding:18px 20px;border:1px solid var(--line);border-radius:16px;background:var(--card)}
+.page-toc>span{display:block;font:700 9px var(--mono);letter-spacing:.09em;text-transform:uppercase;color:var(--ink-faint);margin-bottom:10px}
+.page-toc-links{display:flex;flex-wrap:wrap;gap:8px}.page-toc-links a{font:650 10.5px var(--mono);color:var(--emerald-deep);padding:7px 10px;border-radius:999px;background:var(--emerald-tint);border:1px solid #cbe1d8}
+.detail-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px;margin-top:28px}.detail-card{grid-column:span 4;border:1px solid var(--line);border-radius:17px;background:var(--card);padding:22px}.detail-card.span6{grid-column:span 6}.detail-card.span12{grid-column:1/-1}
+.detail-card .code{font:700 9px var(--mono);letter-spacing:.08em;color:var(--emerald);margin-bottom:10px}.detail-card h3{font-size:17px;margin-bottom:7px}.detail-card p{font-size:12.5px;line-height:1.65;color:var(--ink-soft)}
+.detail-card ul{list-style:none;display:grid;gap:8px;margin-top:12px}.detail-card li{font-size:12px;line-height:1.55;color:var(--ink-soft);padding-left:16px;position:relative}.detail-card li:before{content:"•";position:absolute;left:0;color:var(--emerald);font-weight:800}
+.spec-table-wrap{overflow:auto;border:1px solid var(--line);border-radius:16px;background:var(--card);margin-top:26px}.spec-table{border-collapse:collapse;width:100%;min-width:860px}.spec-table th,.spec-table td{padding:13px 15px;border-bottom:1px solid var(--line);vertical-align:top;text-align:left;font-size:11.5px;line-height:1.55}.spec-table th{background:var(--paper2);font:700 9px var(--mono);letter-spacing:.07em;text-transform:uppercase;color:var(--ink-faint)}.spec-table td:first-child{font-weight:700;color:var(--ink);min-width:150px}.spec-table tr:last-child td{border-bottom:0}
+.state-pill{display:inline-flex;align-items:center;padding:4px 8px;border-radius:999px;background:var(--paper2);border:1px solid var(--line);font:650 9px var(--mono);color:var(--ink-soft);white-space:nowrap}.state-pill.green{background:var(--emerald-tint);border-color:#c7e1d8;color:var(--emerald-deep)}.state-pill.amber{background:#fff4df;border-color:#efd9ae;color:#8c5a07}.state-pill.red{background:#fff0ec;border-color:#edc9bf;color:#9b4637}
+.matrix-grid{display:grid;grid-template-columns:200px repeat(3,1fr);margin-top:26px;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:var(--card)}.matrix-grid>div{padding:13px 14px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);font-size:11.5px;line-height:1.5;color:var(--ink-soft)}.matrix-grid>div:nth-child(4n){border-right:0}.matrix-grid>div:nth-last-child(-n+4){border-bottom:0}.matrix-grid .mh{background:var(--paper2);font:700 9px var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--ink-faint)}.matrix-grid .mr{font-weight:700;color:var(--ink)}
+.data-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:24px}.data-box{padding:18px;border:1px solid var(--line);border-radius:14px;background:var(--card)}.data-box b{display:block;font-size:13px;color:var(--emerald-deep);margin-bottom:5px}.data-box span{font-size:10.5px;line-height:1.5;color:var(--ink-soft)}
+.edge-list{display:grid;gap:11px;margin-top:24px}.edge-item{display:grid;grid-template-columns:150px 1fr 180px;gap:16px;align-items:start;border:1px solid var(--line);border-radius:14px;background:var(--card);padding:16px 18px}.edge-item b{font-size:12px;color:var(--ink)}.edge-item p{font-size:11.5px;line-height:1.55;color:var(--ink-soft)}.edge-item .response{font:650 10px var(--mono);color:var(--emerald-deep)}
+.decision-band{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:25px}.decision-box{padding:23px;border:1px solid var(--line);border-radius:16px;background:var(--card)}.decision-box.good{background:var(--emerald-tint);border-color:#c2ddd3}.decision-box.caution{background:#fff8e9;border-color:#ead4a9}.decision-box h3{font-size:16px;margin-bottom:8px}.decision-box p{font-size:12px;line-height:1.65;color:var(--ink-soft)}
+.evidence-ladder{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;margin-top:25px}.evidence-step{padding:16px 12px;border-radius:14px;border:1px solid var(--line);background:var(--card);min-height:150px}.evidence-step .rank{font:700 10px var(--mono);color:var(--emerald)}.evidence-step b{display:block;font-size:12px;margin:8px 0 5px}.evidence-step p{font-size:10.5px;line-height:1.5;color:var(--ink-soft)}
+.contract-flow{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-top:26px}.contract-node{border:1px solid var(--line);border-radius:14px;background:var(--card);padding:18px;position:relative}.contract-node:not(:last-child):after{content:"→";position:absolute;right:-13px;top:50%;transform:translateY(-50%);font-weight:800;color:var(--emerald);z-index:2}.contract-node b{display:block;font-size:12px;color:var(--emerald-deep);margin-bottom:5px}.contract-node span{font-size:10.5px;line-height:1.5;color:var(--ink-soft)}
+.guardrail-list{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:24px}.guardrail{padding:18px;border-radius:14px;border:1px solid var(--line);background:var(--card)}.guardrail .dont{font:700 9px var(--mono);color:var(--consult);letter-spacing:.06em}.guardrail .do{font:700 9px var(--mono);color:var(--emerald);letter-spacing:.06em}.guardrail p{font-size:11.5px;line-height:1.55;color:var(--ink-soft);margin-top:5px}
+.source-panel{margin-top:28px;border-left:3px solid var(--emerald);padding:16px 18px;background:var(--paper2);border-radius:0 12px 12px 0}.source-panel b{font-size:11px;color:var(--ink)}.source-panel p{font-size:10.5px;line-height:1.6;color:var(--ink-soft);margin-top:4px}
+@media(max-width:900px){.detail-card,.detail-card.span6{grid-column:span 6}.matrix-grid{grid-template-columns:150px repeat(3,1fr)}.data-strip{grid-template-columns:1fr 1fr}.edge-item{grid-template-columns:120px 1fr}.edge-item .response{grid-column:2}.evidence-ladder{grid-template-columns:repeat(3,1fr)}.contract-flow{grid-template-columns:1fr 1fr}.contract-node:not(:last-child):after{display:none}}
+@media(max-width:600px){.detail-card,.detail-card.span6{grid-column:1/-1}.matrix-grid{display:block}.matrix-grid>div{border-right:0}.matrix-grid .mh{display:none}.matrix-grid .mr{background:var(--paper2)}.data-strip,.decision-band,.guardrail-list{grid-template-columns:1fr}.edge-item{grid-template-columns:1fr}.edge-item .response{grid-column:auto}.evidence-ladder{grid-template-columns:1fr 1fr}.contract-flow{grid-template-columns:1fr}}
+
 </style>
 
 <style id="figma-direct-image-fix">
@@ -600,10 +684,11 @@ h1,h2,h3{font-family:var(--display);letter-spacing:-.025em;line-height:1.08}
       <div class="nav-item">
         <a href="#/product" class="nav-link" data-page="product">Product <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></a>
         <div class="dropdown">
-          <a class="dd-item" href="#/product" data-nav><span class="di"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span><div><b>Overview</b><span>The connected ecosystem</span></div></a>
-          <a class="dd-item" href="#/follow-up-lifecycle" data-nav><span class="di"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg></span><div><b>Follow-up Lifecycle</b><span>Dedicated page · report → resolution → evidence</span></div></a>
-          <a class="dd-item" href="#/modules" data-nav><span class="di"><svg viewBox="0 0 24 24"><path d="M12 2 2 7l10 5 10-5z"/><path d="M2 12l10 5 10-5"/></svg></span><div><b>Modules</b><span>Dedicated page · nine connected pillars</span></div></a>
-          <a class="dd-item" href="https://www.figma.com/design/IZZYiAlNAdYAAcX2z5AtOm/full-emenda?t=9xQLU58yz168Rhp8-0" target="_blank" rel="noopener"><span class="di"><svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="3"/><path d="M8 7h8M8 11h8M8 15h5"/></svg></span><div><b>View Product Design ↗</b><span>Open the fixed Worker mobile design in Figma</span></div></a>
+          <a class="dd-item" href="#/product" data-nav><span class="di"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span><div><b>Overview</b><span>Connected product model</span></div></a>
+          <a class="dd-item" href="#/feature-catalog" data-nav><span class="di"><svg viewBox="0 0 24 24"><path d="M4 4h16v16H4z"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></span><div><b>Feature Catalog</b><span>59 approved · 27 candidates</span></div></a>
+          <a class="dd-item" href="#/follow-up-lifecycle" data-nav><span class="di"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/></svg></span><div><b>Follow-up Lifecycle</b><span>Report → resolution → evidence</span></div></a>
+          <a class="dd-item" href="#/modules" data-nav><span class="di"><svg viewBox="0 0 24 24"><path d="M12 2 2 7l10 5 10-5z"/><path d="M2 12l10 5 10-5"/></svg></span><div><b>Modules</b><span>Role & dependency map</span></div></a>
+          <a class="dd-item" href="https://www.figma.com/design/IZZYiAlNAdYAAcX2z5AtOm/full-emenda?t=9xQLU58yz168Rhp8-0" target="_blank" rel="noopener"><span class="di"><svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="3"/><path d="M8 7h8M8 11h8M8 15h5"/></svg></span><div><b>View Product Design ↗</b><span>Fixed Worker mobile Figma</span></div></a>
         </div>
       </div>
       <div class="nav-item">
@@ -618,13 +703,28 @@ h1,h2,h3{font-family:var(--display);letter-spacing:-.025em;line-height:1.08}
         <a href="#/platform" class="nav-link" data-page="platform">Platform <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></a>
         <div class="dropdown">
           <a class="dd-item" href="#/emenda-assistant" data-nav><span class="di"><svg viewBox="0 0 24 24"><path d="M13 2 3 14h7l-1 8 10-12h-7z"/></svg></span><div><b>Emenda Assistant</b><span>Dedicated page · AI assistance layer</span></div></a>
-          <a class="dd-item" href="#/architecture" data-nav><span class="di"><svg viewBox="0 0 24 24"><path d="M12 2 2 7l10 5 10-5z"/><path d="M2 12l10 5 10-5M2 17l10 5 10-5"/></svg></span><div><b>Architecture</b><span>Dedicated page · four connected layers</span></div></a>
+          <a class="dd-item" href="#/architecture" data-nav><span class="di"><svg viewBox="0 0 24 24"><path d="M12 2 2 7l10 5 10-5z"/><path d="M2 12l10 5 10-5M2 17l10 5 10-5"/></svg></span><div><b>Architecture</b><span>Frontend · API · database · hosting</span></div></a>
+          <a class="dd-item" href="#/integration-data" data-nav><span class="di"><svg viewBox="0 0 24 24"><path d="M8 12h8M12 8v8"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="12" r="3"/></svg></span><div><b>Integration & Data</b><span>Connections without losing data ownership</span></div></a>
           <a class="dd-item" href="#/security-privacy" data-nav><span class="di"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span><div><b>Security & Privacy</b><span>Dedicated page · trust by design</span></div></a>
         </div>
       </div>
       <a href="#/industries" class="nav-link" data-page="industries">Industries</a>
-      <a href="#/resources" class="nav-link" data-page="resources">Resources</a>
-      <a href="#/company" class="nav-link" data-page="company">Company</a>
+      <div class="nav-item">
+        <a href="#/resources" class="nav-link" data-page="resources">Resources <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></a>
+        <div class="dropdown">
+          <a class="dd-item" href="#/resources" data-nav><span class="di"><svg viewBox="0 0 24 24"><path d="M4 4h16v16H4z"/></svg></span><div><b>Product Status</b><span>Implementation & release view</span></div></a>
+          <a class="dd-item" href="#/implementation" data-nav><span class="di"><svg viewBox="0 0 24 24"><path d="M4 12h16M14 6l6 6-6 6"/></svg></span><div><b>Implementation</b><span>Discovery → pilot → rollout</span></div></a>
+          <a class="dd-item" href="#/faq" data-nav><span class="di"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 1 1 3.7 2.2c-.8.4-1.2.9-1.2 1.8M12 17h.01"/></svg></span><div><b>FAQ</b><span>Product, AI, data, deployment</span></div></a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="#/company" class="nav-link" data-page="company">Company <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></a>
+        <div class="dropdown">
+          <a class="dd-item" href="#/company" data-nav><span class="di"><svg viewBox="0 0 24 24"><path d="M3 21h18M6 21V5l6-3 6 3v16"/></svg></span><div><b>About</b><span>Vision & company direction</span></div></a>
+          <a class="dd-item" href="#/business-model" data-nav><span class="di"><svg viewBox="0 0 24 24"><path d="M4 7h16v10H4z"/><path d="M8 7V5h8v2"/></svg></span><div><b>Business Model</b><span>Segments, value & scope boundary</span></div></a>
+          <a class="dd-item" href="#/market-positioning" data-nav><span class="di"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span><div><b>Market & Positioning</b><span>Why now, market layers, differentiation</span></div></a>
+          </div>
+      </div>
     </div>
     <div class="nav-right">
       <div class="lang-switcher" aria-label="Language">
@@ -643,19 +743,22 @@ h1,h2,h3{font-family:var(--display);letter-spacing:-.025em;line-height:1.08}
 <!-- mobile menu -->
 <div class="mobile-menu" id="mobileMenu">
   <div class="mgrp">Product</div>
-  <a href="#/product" data-page="product">Overview</a><a href="#/follow-up-lifecycle" data-nav>Follow-up Lifecycle</a><a href="#/modules" data-nav>Modules</a><a href="https://www.figma.com/design/IZZYiAlNAdYAAcX2z5AtOm/full-emenda?t=9xQLU58yz168Rhp8-0" target="_blank" rel="noopener">View Product Design ↗</a>
+  <a href="#/product" data-page="product">Overview</a><a href="#/feature-catalog" data-nav>Feature Catalog</a><a href="#/follow-up-lifecycle" data-nav>Follow-up Lifecycle</a><a href="#/modules" data-nav>Modules</a><a href="https://www.figma.com/design/IZZYiAlNAdYAAcX2z5AtOm/full-emenda?t=9xQLU58yz168Rhp8-0" target="_blank" rel="noopener">View Product Design ↗</a>
   <div class="mgrp">Solutions</div>
   <a href="#/for-workers" data-nav>For Workers</a><a href="#/for-managers" data-nav>For Managers</a><a href="#/for-organizations" data-nav>For Organizations</a>
   <div class="mgrp">Platform</div>
-  <a href="#/emenda-assistant" data-nav>Emenda Assistant</a><a href="#/architecture" data-nav>Architecture</a><a href="#/security-privacy" data-nav>Security & Privacy</a>
+  <a href="#/emenda-assistant" data-nav>Emenda Assistant</a><a href="#/architecture" data-nav>Architecture</a><a href="#/integration-data" data-nav>Integration & Data</a><a href="#/security-privacy" data-nav>Security & Privacy</a>
   <div class="mgrp">Language</div>
   <div class="mobile-lang-switcher" aria-label="Language">
     <button type="button" class="lang-btn" data-lang="en">EN</button>
     <button type="button" class="lang-btn" data-lang="id">ID</button>
     <button type="button" class="lang-btn" data-lang="ja">日本語</button>
   </div>
-  <div class="mgrp">More</div>
-  <a href="#/industries" data-page="industries">Industries</a><a href="#/resources" data-page="resources">Resources</a><a href="#/company" data-page="company">Company</a><a href="https://emenda.tech" target="_blank" rel="noopener">Open Live Demo ↗</a>
+  <div class="mgrp">Resources</div>
+  <a href="#/resources" data-page="resources">Product Status</a><a href="#/implementation" data-nav>Implementation</a><a href="#/faq" data-nav>FAQ</a>
+  <div class="mgrp">Company</div>
+  <a href="#/company" data-page="company">About</a><a href="#/business-model" data-nav>Business Model</a><a href="#/market-positioning" data-nav>Market & Positioning</a><div class="mgrp">More</div>
+  <a href="#/industries" data-page="industries">Industries</a><a href="https://emenda.tech" target="_blank" rel="noopener">Open Live Demo ↗</a>
 </div>
 
 <main id="app"></main>
@@ -670,13 +773,13 @@ h1,h2,h3{font-family:var(--display);letter-spacing:-.025em;line-height:1.08}
         <div class="confid" style="margin-top:16px;font-size:11px">PRODUCT / PITCH MICROSITE · 2026</div>
       </div>
       <div class="fcol"><h4>Product</h4>
-        <a href="#/product" data-page="product">Overview</a><a href="#/follow-up-lifecycle" data-nav>Follow-up Lifecycle</a><a href="#/modules" data-nav>Modules</a><a href="https://www.figma.com/design/IZZYiAlNAdYAAcX2z5AtOm/full-emenda?t=9xQLU58yz168Rhp8-0" target="_blank" rel="noopener">View Product Design ↗</a>
+        <a href="#/product" data-page="product">Overview</a><a href="#/feature-catalog" data-nav>Feature Catalog</a><a href="#/follow-up-lifecycle" data-nav>Follow-up Lifecycle</a><a href="#/modules" data-nav>Modules</a><a href="https://www.figma.com/design/IZZYiAlNAdYAAcX2z5AtOm/full-emenda?t=9xQLU58yz168Rhp8-0" target="_blank" rel="noopener">View Product Design ↗</a>
       </div>
       <div class="fcol"><h4>Platform</h4>
-        <a href="#/emenda-assistant" data-nav>Emenda Assistant</a><a href="#/architecture" data-nav>Architecture</a><a href="#/security-privacy" data-nav>Security</a><a href="#/resources" data-page="resources">Roadmap</a>
+        <a href="#/emenda-assistant" data-nav>Emenda Assistant</a><a href="#/architecture" data-nav>Architecture</a><a href="#/integration-data" data-nav>Integration & Data</a><a href="#/security-privacy" data-nav>Security</a><a href="#/implementation" data-nav>Implementation</a>
       </div>
       <div class="fcol"><h4>Company</h4>
-        <a href="#/company" data-page="company">About</a><a href="#/solutions" data-page="solutions">Solutions</a><a href="#/industries" data-page="industries">Industries</a><a href="https://emenda.tech" target="_blank" rel="noopener">Open Live Demo ↗</a>
+        <a href="#/company" data-page="company">About</a><a href="#/business-model" data-nav>Business Model</a><a href="#/market-positioning" data-nav>Market & Positioning</a><a href="https://emenda.tech" target="_blank" rel="noopener">Open Live Demo ↗</a>
       </div>
     </div>
     <div class="footer-bottom">
@@ -710,7 +813,7 @@ const I={
   check:'<path d="M20 6 9 17l-5-5"/>',
   eye:'<path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/>',
   lock:'<rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/>',
-  flag:'<path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><path d="M4 22v-7"/>',
+  flag:'<path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><path d="M4 22v-7"/>'
 };
 const ic=(k,cls='ci')=>`<span class="${cls}"><svg viewBox="0 0 24 24">${I[k]||I.check}</svg></span>`;
 
@@ -2101,6 +2204,394 @@ PAGES.home=()=>{
   return s;
 };
 
+
+/* ============================================================ V14 · OFFICIAL DEPTH PAGES ============================================================ */
+PAGES.featureCatalog=()=>`
+<section class="phero"><div class="wrap catalog-hero">
+  <div>
+    <span class="eyebrow">${L('Product / Feature Catalog','Produk / Katalog Fitur','製品 / 機能カタログ')}</span>
+    <h1>${L('The complete product is larger than the nine-pillar overview.','Produk lengkap jauh lebih besar daripada overview sembilan pilar.','製品全体は9つの柱という概要よりも広い機能体系を持ちます。')}</h1>
+    <p>${L('The frozen Product Feature Catalog v1.0 r10 is the scope reference across Product, Design, Engineering, QA, and stakeholders. It separates approved features from candidates and maps release/status explicitly.','Product Feature Catalog v1.0 r10 yang sudah frozen menjadi acuan scope untuk Product, Design, Engineering, QA, dan stakeholder. Dokumen ini memisahkan fitur approved dari candidate serta memetakan release/status secara eksplisit.','凍結済みProduct Feature Catalog v1.0 r10は、Product・Design・Engineering・QA・stakeholder共通のスコープ基準です。ApprovedとCandidateを分離し、ReleaseとStatusを明示します。')}</p>
+  </div>
+  <div class="catalog-summary">
+    <div class="catalog-stat"><b>59</b><span>${L('Approved features in the current catalog baseline.','Fitur approved pada baseline katalog saat ini.','現行カタログのApproved機能。')}</span></div>
+    <div class="catalog-stat"><b>27</b><span>${L('Candidate features awaiting explicit Product Owner ruling.','Fitur candidate yang menunggu keputusan eksplisit Product Owner.','Product Owner判断待ちのCandidate機能。')}</span></div>
+    <div class="catalog-stat"><b>34</b><span>${L('Approved features allocated to R1.','Fitur approved yang masuk R1.','R1に割り当てられたApproved機能。')}</span></div>
+    <div class="catalog-stat"><b>15</b><span>${L('Official module groups in the catalog.','Kelompok modul resmi dalam katalog.','公式モジュールグループ。')}</span></div>
+  </div>
+</div></section>
+
+<section class="sec"><div class="wrap">
+  <span class="eyebrow">${L('Official module inventory','Inventory modul resmi','公式モジュール一覧')}</span>
+  <h2>${L('Approved scope, candidates, releases, and maturity in one view.','Approved scope, candidate, release, dan maturity dalam satu view.','Approved、Candidate、Release、成熟度を一つの表で確認。')}</h2>
+  <div class="module-list">
+    <div class="module-row head"><span>#</span><span>${L('Module','Modul','モジュール')}</span><span>${L('What it covers','Cakupan','概要')}</span><span>${L('Approved','Approved','Approved')}</span><span>${L('Release','Release','Release')}</span><span>${L('Status','Status','Status')}</span></div>
+    ${[
+      ['01','Identity & Access',12,L('Lifetime EMENDA ID, authentication, language, employment connection, resignation continuity, re-connection, export, self-registration.','Lifetime EMENDA ID, authentication, bahasa, employment connection, resignation continuity, re-connection, export, self-registration.','Lifetime EMENDA ID、認証、言語、雇用接続、退職継続、再接続、export、self-registration。'),'R1–R3+','MVP → Vision'],
+      ['02','Organization Management',3,L('Manager authentication, organization creation, invite issuance and management.','Manager authentication, organization creation, invite issuance dan management.','管理者認証、組織作成、招待発行・管理。'),'R1','MVP'],
+      ['03','Communication',10,L('Worker messaging, dual bubbles, original retention, translation preview, intent tags, manager reply, receipts, voice input.','Worker messaging, dual bubble, original retention, translation preview, intent tag, manager reply, receipt, voice input.','労働者メッセージ、dual bubble、原文保持、翻訳preview、intent tag、管理者返信、既読、音声入力。'),'R1','MVP'],
+      ['04','Translation',4,L('Commercial MT, care glossary, fourth-language expansion, future context translation.','Commercial MT, care glossary, fourth-language expansion, future context translation.','商用MT、介護glossary、第4言語、将来の文脈翻訳。'),'R1–R3','MVP → Roadmap'],
+      ['05','Work Records',6,L('Care daily report, free text + preview, confirmation, manager report list, unified timeline, construction template.','Care daily report, free text + preview, confirmation, manager report list, unified timeline, construction template.','介護日報、自由記述＋preview、確認、管理者report list、統合timeline、建設template。'),'R1–R2','MVP → Roadmap'],
+      ['06','Work Log',3,L('Structured professional history, certifications, worker profile view.','Structured professional history, certification, worker profile view.','構造化職歴、資格、worker profile。'),'R2–R3','Roadmap'],
+      ['07','Measurement & Analytics',3,L('Platform event logging, KPI computation, manager KPI strip.','Platform event logging, KPI computation, manager KPI strip.','イベントlog、KPI計算、manager KPI strip。'),'R1','MVP'],
+      ['08','Consent & Privacy',5,L('Onboarding disclosure, consent recording, visibility banner, consent ledger, purpose-scoped re-consent.','Onboarding disclosure, consent recording, visibility banner, consent ledger, purpose-scoped re-consent.','onboarding disclosure、consent記録、visibility banner、consent ledger、目的別再同意。'),'R1–R2','MVP → Roadmap'],
+      ['09','Notifications',2,L('In-app unread indicators and push notifications.','In-app unread indicator dan push notification.','アプリ内未読表示、push通知。'),'R1–R2','MVP → Roadmap'],
+      ['10','Administration',1,L('SuperAdmin internal console.','SuperAdmin internal console.','SuperAdmin内部console。'),'R1±','MVP-adjacent'],
+      ['11','Health Log',4,L('Device health integration, wearable × work insights, stress-check worker and employer surfaces.','Device health integration, wearable × work insight, stress-check worker dan employer surface.','health device連携、wearable×work、stress check worker/employer。'),'R3','Roadmap'],
+      ['12','Life Log',1,L('Worker-private life records.','Worker-private life record.','worker-private life record。'),'R3+','Vision'],
+      ['13','EMENDA Score',2,L('Worker-controlled score and reputation concepts.','Worker-controlled score dan reputation concept.','worker-controlled score、reputation concept。'),'R4','Vision'],
+      ['14','EMENDA Coin',1,L('Future value-circulation layer with incentive-law constraints.','Future value-circulation layer dengan constraint incentive law.','将来のvalue circulation layer。'),'R4','Vision'],
+      ['15','External Connections',2,L('Credit-layer connection and backward data import. Connection, not transfer.','Credit-layer connection dan backward data import. Connection, bukan transfer.','credit layer接続、backward data import。データ移転ではなく接続。'),'R2–R4','Roadmap → Vision']
+    ].map(([n,t,c,d,r,s])=>`<div class="module-row"><span class="mn">${n}</span><span class="mt">${t}</span><span class="md">${d}</span><span class="count">${c}</span><span class="rel">${r}</span><span class="st">${s}</span></div>`).join('')}
+  </div>
+  <p class="note-source">${L('Catalog baseline: Product Feature Catalog v1.0 r10, dated 5 Aug 2026. Candidate features are not approved scope until explicitly ruled.','Baseline katalog: Product Feature Catalog v1.0 r10, tanggal 5 Agustus 2026. Candidate feature bukan approved scope sampai diputuskan secara eksplisit.','カタログ基準：Product Feature Catalog v1.0 r10（2026-08-05）。Candidateは明示判断されるまでApproved scopeではありません。')}</p>
+</div></section>
+
+<section class="sec tinted"><div class="wrap">
+  <span class="eyebrow">${L('Release logic','Logika release','Releaseロジック')}</span>
+  <h2>${L('MVP, roadmap, and vision should not be presented as the same maturity.','MVP, roadmap, dan vision tidak boleh ditampilkan seolah maturity-nya sama.','MVP・Roadmap・Visionを同じ成熟度として扱いません。')}</h2>
+  <div class="deep-grid">
+    <div class="deep-card"><div class="num">R1</div><h3>${L('Operational entry layer','Entry layer operasional','運用入口')}</h3><p>${L('Identity/auth, organization setup, communication, translation, care reporting, measurement, core consent/privacy, and essential admin surfaces.','Identity/auth, organization setup, communication, translation, care reporting, measurement, core consent/privacy, dan admin surface penting.','ID/auth、組織設定、communication、translation、介護report、measurement、consent/privacy、admin。')}</p></div>
+    <div class="deep-card"><div class="num">R2</div><h3>${L('Continuity & deeper records','Kontinuitas & record lebih dalam','継続性・記録深化')}</h3><p>${L('Worker timeline, professional history, notifications, consent ledger, and selected external/data connections.','Worker timeline, professional history, notification, consent ledger, dan selected external/data connection.','worker timeline、professional history、notification、consent ledger、外部/data接続。')}</p></div>
+    <div class="deep-card"><div class="num">R3–R4</div><h3>${L('Data enrichment & future layers','Data enrichment & future layer','データ拡張・将来レイヤー')}</h3><p>${L('Context translation, health/wearable connections, life log, Score, Coin, and broader external connection concepts.','Context translation, health/wearable connection, life log, Score, Coin, dan broader external connection.','文脈翻訳、health/wearable、life log、Score、Coin、外部接続。')}</p></div>
+  </div>
+</div></section>
+${detailedCTA()}`;
+
+PAGES.integrationData=()=>`
+<section class="phero"><div class="wrap">
+  <span class="eyebrow">${L('Platform / Integration & Data','Platform / Integrasi & Data','プラットフォーム / 連携・データ')}</span>
+  <h1>${L('Connect systems without giving away the source of truth.','Hubungkan sistem tanpa melepaskan source of truth.','ソース・オブ・トゥルースを手放さずに外部と接続。')}</h1>
+  <p>${L('Emenda’s strategic direction is connection, not uncontrolled data transfer. Worker-originated operational data remains governed inside the platform while selected external services can connect through explicit scopes and permissions.','Arah strategis Emenda adalah connection, bukan transfer data tanpa kontrol. Data operasional yang berasal dari worker tetap governed di dalam platform sementara service eksternal terpilih dapat terhubung melalui scope dan permission eksplisit.','Emendaの方針は無制限なデータ移転ではなく接続です。労働者起点の業務データを基盤内で管理し、外部serviceは明示scope・permissionで接続します。')}</p>
+</div></section>
+
+<section class="sec"><div class="wrap">
+  <span class="eyebrow">${L('Connection model','Model koneksi','接続モデル')}</span>
+  <h2>${L('Emenda remains the data-generation and context layer.','Emenda tetap menjadi layer pembentukan data dan context.','Emendaはデータ発生点と文脈レイヤーを維持します。')}</h2>
+  <div class="integration-map">
+    <div class="integration-node"><h3>${L('Field & worker inputs','Input lapangan & worker','現場・労働者入力')}</h3><p>${L('Identity, communication, daily reports, professional history, consent events, and outcome history.','Identity, communication, daily report, professional history, consent event, dan outcome history.','ID、communication、日報、professional history、consent、outcome history。')}</p></div>
+    <div class="integration-arrow">→</div>
+    <div class="integration-node core"><h3>EMENDA</h3><p>${L('Primary operating data, role/purpose controls, original-language integrity, lifecycle state, and evidence.','Primary operating data, kontrol role/purpose, original-language integrity, lifecycle state, dan evidence.','一次業務データ、role/purpose制御、原文保持、lifecycle state、evidence。')}</p></div>
+    <div class="integration-arrow">↔</div>
+    <div class="integration-node"><h3>${L('External / adjacent services','Service eksternal / adjacent','外部・隣接service')}</h3><p>${L('Existing enterprise systems today; future credit, housing, communications, residency, and other adjacent connections only where product/legal scope is validated.','Existing enterprise system saat ini; future credit, housing, communication, residency, dan adjacent connection lain hanya bila product/legal scope tervalidasi.','既存enterprise system、将来のcredit、housing、communication、residency等はproduct/legal scope検証後に接続。')}</p></div>
+  </div>
+</div></section>
+
+<section class="sec tinted"><div class="wrap">
+  <span class="eyebrow">${L('Integration principles','Prinsip integrasi','連携原則')}</span>
+  <h2>${L('What must remain true as connectivity grows.','Hal yang harus tetap benar ketika connectivity berkembang.','接続が増えても維持する原則。')}</h2>
+  <div class="deep-grid">
+    ${[
+      ['01',L('Connection, not uncontrolled transfer','Connection, bukan uncontrolled transfer','接続であり無制限移転ではない'),L('External services should receive only the minimum approved scope required for the user’s purpose.','Service eksternal menerima minimum approved scope yang diperlukan untuk purpose user.','外部serviceには目的に必要な最小approved scopeのみ。')],
+      ['02',L('Consent is a durable record','Consent menjadi record durable','同意を記録資産に'),L('Permission decisions must be recordable and later reviewable, not a one-time modal with no history.','Keputusan permission harus tercatat dan bisa direview kemudian, bukan modal sekali lewat tanpa history.','permission判断を履歴として保持し、後から確認可能に。')],
+      ['03',L('Original source remains intact','Original source tetap utuh','原文保持'),L('Translation, enrichment, and AI layers do not silently rewrite the worker’s original record.','Translation, enrichment, dan AI layer tidak mengganti original record worker secara diam-diam.','翻訳・enrichment・AIは原文を上書きしません。')],
+      ['04',L('Integrations do not become product core','Integrasi tidak menjadi core logic','個別連携をcore化しない'),L('External adapters remain behind a clear API/integration boundary so the product model stays stable.','Adapter eksternal tetap di balik API/integration boundary agar product model stabil.','外部adapterを明確なAPI boundaryに置き、product modelを安定させます。')]
+    ].map(([n,t,p])=>`<div class="deep-card wide"><div class="num">${n}</div><h3>${t}</h3><p>${p}</p></div>`).join('')}
+  </div>
+</div></section>
+
+<section class="sec"><div class="wrap">
+  <span class="eyebrow">${L('Current vs future connections','Koneksi saat ini vs masa depan','現在・将来の接続')}</span>
+  <h2>${L('Do not confuse strategic adjacency with a shipped integration.','Jangan samakan strategic adjacency dengan integrasi yang sudah shipped.','戦略的隣接領域と実装済みintegrationを混同しません。')}</h2>
+  <div class="cap-table-wrap"><table class="cap-table"><thead><tr><th>${L('Connection area','Area koneksi','接続領域')}</th><th>${L('Why it matters','Mengapa penting','意義')}</th><th>${L('Current statement','Pernyataan saat ini','現状')}</th></tr></thead><tbody>
+    <tr><td>${L('Existing organization systems','Existing system organisasi','既存組織system')}</td><td>${L('Reduce duplicate entry and keep Emenda inside the existing operating environment.','Mengurangi duplicate entry dan menempatkan Emenda di existing operating environment.','重複入力を減らし既存運用環境に接続。')}</td><td>${statusBadge('mvp')}</td></tr>
+    <tr><td>${L('Credit / financial inclusion','Credit / financial inclusion','信用・金融包摂')}</td><td>${L('Worker-originated primary work records may reduce the information gap in adjacent services.','Primary work record yang berasal dari worker berpotensi mengurangi information gap di adjacent service.','労働者起点の就労一次データが隣接serviceの情報空白を補完する可能性。')}</td><td>${statusBadge('planned')}</td></tr>
+    <tr><td>${L('Housing / communications / residency','Housing / communication / residency','住居・通信・在留')}</td><td>${L('Potential future service connections around the worker journey.','Potential future service connection di sekitar worker journey.','worker journey周辺の将来service接続。')}</td><td>${statusBadge('planned')}</td></tr>
+    <tr><td>${L('Wearable / physical data','Wearable / physical data','wearable・身体data')}</td><td>${L('Stage 3 enrichment only after privacy, legal, and product validation.','Stage 3 enrichment hanya setelah validasi privacy, legal, dan product.','privacy・legal・product検証後のStage 3。')}</td><td>${statusBadge('planned')}</td></tr>
+  </tbody></table></div>
+</div></section>`;
+
+PAGES.implementation=()=>`
+<section class="phero"><div class="wrap">
+  <span class="eyebrow">${L('Resources / Implementation','Resources / Implementasi','リソース / 導入')}</span>
+  <h1>${L('From current-state mapping to a repeatable rollout.','Dari pemetaan kondisi saat ini sampai rollout yang repeatable.','現状把握から再現可能なrolloutまで。')}</h1>
+  <p>${L('Implementation should begin with a real workflow, not a generic software rollout. Emenda’s research plan measures the trigger, channel, handoff, time, exception, ownership, and outcome before deciding what to automate or replace.','Implementasi dimulai dari workflow nyata, bukan generic software rollout. Research plan Emenda mengukur trigger, channel, handoff, waktu, exception, ownership, dan outcome sebelum memutuskan apa yang diotomasi atau diganti.','導入はgenericなsoftware rolloutではなく実際のworkflowから始めます。trigger、channel、handoff、時間、exception、ownership、outcomeを測定してから置換・自動化を判断します。')}</p>
+</div></section>
+
+<section class="sec"><div class="wrap">
+  <span class="eyebrow">${L('Seven-step implementation','Tujuh langkah implementasi','7ステップ導入')}</span>
+  <h2>${L('A controlled path from evidence to scale.','Jalur terkontrol dari evidence sampai scale.','evidenceからscaleまで段階的に。')}</h2>
+  ${[
+    ['01',L('Discovery','Discovery','Discovery'),L('Observe the current workflow: chat, paper, calls, spreadsheets, SOPs, and real handoffs.','Observasi current workflow: chat, paper, call, spreadsheet, SOP, dan handoff nyata.','chat・紙・電話・spreadsheet・SOP・handoffの現状観察。'),L('Output: current-state map, actors, pain points, measurable baseline.','Output: current-state map, actor, pain point, measurable baseline.','Output：current-state map、actor、pain point、baseline。')],
+    ['02',L('Fit-gap','Fit-gap','Fit-gap'),L('Map current tasks to Emenda capabilities and identify what must remain outside scope.','Petakan task saat ini ke capability Emenda dan tentukan apa yang tetap di luar scope.','現行taskをEmenda capabilityへmappingし、scope外を明確化。'),L('Output: MVP scope, exceptions, integration needs, privacy constraints.','Output: MVP scope, exception, integration need, privacy constraint.','Output：MVP scope、exception、integration、privacy。')],
+    ['03',L('Configuration','Configuration','Configuration'),L('Configure roles, report templates, languages, organization settings, knowledge, and permissions.','Konfigurasi role, report template, bahasa, organization setting, knowledge, dan permission.','role、report template、言語、組織設定、knowledge、permissionを設定。'),L('Output: pilot-ready organization and workflow.','Output: organisasi dan workflow siap pilot.','Output：pilot-ready環境。')],
+    ['04',L('Integration','Integration','Integration'),L('Connect only the existing systems needed to avoid duplicate work in the pilot.','Hubungkan hanya existing system yang dibutuhkan untuk mencegah duplicate work di pilot.','pilotで必要な既存systemのみ接続。'),L('Output: tested data boundary and fallback procedure.','Output: data boundary dan fallback procedure yang teruji.','Output：tested data boundary、fallback。')],
+    ['05',L('Pilot','Pilot','Pilot'),L('Run one high-friction workflow with a controlled user group and instrument events from day one.','Jalankan satu workflow dengan friction tinggi pada kelompok user terkontrol dan instrument event sejak hari pertama.','frictionの高い1workflowを限定userで実施し、初日からevent計測。'),L('Output: usage, completion, response, misunderstanding, follow-up, and outcome data.','Output: data usage, completion, response, misunderstanding, follow-up, dan outcome.','Output：usage、completion、response、misunderstanding、follow-up、outcome。')],
+    ['06',L('Evaluation','Evaluation','Evaluation'),L('Compare the pilot with baseline and determine what changed operationally, not only what users said they liked.','Bandingkan pilot dengan baseline dan tentukan perubahan operasional, bukan hanya apa yang user bilang mereka suka.','baselineと比較し、好みではなく運用変化を評価。'),L('Output: continue / revise / stop decisions per workflow.','Output: keputusan continue / revise / stop per workflow.','Output：workflowごとのcontinue/revise/stop。')],
+    ['07',L('Rollout','Rollout','Rollout'),L('Expand sites, roles, modules, and integrations only after ownership, support, and governance are proven.','Perluas site, role, module, dan integration setelah ownership, support, dan governance terbukti.','ownership・support・governance確認後にsite/role/module/integration拡張。'),L('Output: repeatable operating model and deployment standard.','Output: operating model dan deployment standard yang repeatable.','Output：repeatable operating model、deployment standard。')]
+  ].map(([n,t,p,o])=>`<div class="step-detail"><div class="sdn">${n}</div><div><h3>${t}</h3><p>${p}</p></div><div><p><strong style="color:var(--ink)">${o}</strong></p></div></div>`).join('')}
+</div></section>
+
+<section class="sec tinted"><div class="wrap">
+  <span class="eyebrow">${L('Pilot evidence','Evidence pilot','Pilot evidence')}</span>
+  <h2>${L('Measure behavior, not feature preference.','Ukur behavior, bukan sekadar feature preference.','feature preferenceではなくbehaviorを測定。')}</h2>
+  <div class="kpi-grid">
+    ${[
+      ['WORKER',L('Report completion','Report completion','Report completion'),L('Can the worker submit today’s report without assistance and understand who will read it?','Apakah worker dapat submit today’s report tanpa bantuan dan paham siapa yang membacanya?','workerが支援なしで日報を提出し閲覧者を理解できるか。')],
+      ['WORKER',L('Clarification confidence','Clarification confidence','Clarification confidence'),L('Can the worker state that they do not understand and read original vs translation correctly?','Apakah worker dapat menyatakan tidak paham dan membaca original vs translation dengan benar?','不明点を伝えoriginal/translationを正しく理解できるか。')],
+      ['MANAGER',L('Time to first action','Time to first action','Time to first action'),L('Can a manager identify who needs attention without long exploration?','Apakah manager dapat menemukan siapa yang butuh perhatian tanpa eksplorasi panjang?','管理者が要対応者を迅速に特定できるか。')],
+      ['MANAGER',L('Close follow-up','Close follow-up','Close follow-up'),L('Can a manager close a follow-up and explain what was recorded?','Apakah manager dapat close follow-up dan menjelaskan apa yang tercatat?','follow-upをcloseし記録内容を説明できるか。')],
+      ['ORG',L('Manual aggregation effort','Manual aggregation effort','Manual aggregation effort'),L('How many hours per month are spent aggregating worker communication/reporting today?','Berapa jam per bulan yang dihabiskan untuk agregasi komunikasi/reporting worker saat ini?','現在worker communication/reporting集計に月何時間かかるか。')],
+      ['SYSTEM',L('Outcome traceability','Outcome traceability','Outcome traceability'),L('Can the team reconstruct the issue, owner, action, and outcome without opening another channel?','Apakah tim dapat reconstruct issue, owner, action, dan outcome tanpa membuka channel lain?','別channelを開かずissue・owner・action・outcomeを再構築できるか。')]
+    ].map(([k,t,p])=>`<div class="kpi-card"><span class="kpi">${k}</span><h3>${t}</h3><p>${p}</p></div>`).join('')}
+  </div>
+</div></section>
+${detailedCTA()}`;
+
+PAGES.businessModel=()=>`
+<section class="phero"><div class="wrap">
+  <span class="eyebrow">${L('Company / Business Model','Perusahaan / Business Model','会社 / Business Model')}</span>
+  <h1>${L('Sell a practical operating tool today; compound the value of primary work data over time.','Menjual operating tool yang praktis hari ini; meningkatkan nilai primary work data dari waktu ke waktu.','今日の実務toolを販売し、一次労働データの価値を長期的に積み上げる。')}</h1>
+  <p>${L('The business strategy treats Stage 1 as the entry product: multilingual communication plus work management for receiving companies and foreign workers. The long-term asset is the worker-originated primary data created by real daily operations.','Business strategy menempatkan Stage 1 sebagai entry product: komunikasi multilingual + work management untuk receiving company dan foreign worker. Aset jangka panjangnya adalah primary data yang berasal dari worker dan terbentuk dari operasi harian nyata.','Stage 1は受入企業・外国人労働者向け多言語communication＋work management。長期資産は日々の実務から生まれる労働者起点の一次データです。')}</p>
+</div></section>
+
+<section class="sec"><div class="wrap">
+  <span class="eyebrow">${L('Customer segments','Segmen customer','顧客segment')}</span>
+  <h2>${L('Two immediate B2B entry segments.','Dua segmen B2B sebagai entry awal.','初期B2Bの2segment。')}</h2>
+  <div class="deep-grid">
+    <div class="deep-card wide"><div class="num">SEGMENT 01</div><h3>${L('Receiving companies','Receiving company','受入企業')}</h3><p>${L('Caregiving and other field operations where Japanese-only communication, paper reporting, and phone-based clarification create friction. Direct value: operational efficiency, clearer records, and better workforce continuity.','Caregiving dan field operation lain di mana komunikasi Japanese-only, paper reporting, dan clarification lewat telepon menimbulkan friction. Value langsung: efisiensi operasional, record lebih jelas, dan workforce continuity.','介護等の現場で日本語のみ、紙report、電話確認によるfrictionを削減。価値：効率、記録明確化、継続性。')}</p></div>
+    <div class="deep-card wide"><div class="num">SEGMENT 02</div><h3>${L('Companies moving toward self-managed support','Perusahaan yang menuju self-managed support','自社支援へ移行する企業')}</h3><p>${L('Organizations reducing dependency on outsourced support need a software layer for records, interviews, follow-up, reporting, and operational continuity. Emenda remains software rather than scaling through human services.','Organisasi yang mengurangi ketergantungan pada outsourced support membutuhkan software layer untuk record, interview, follow-up, reporting, dan operational continuity. Emenda tetap software, bukan scale lewat human service.','外部支援依存を減らす企業へ、記録・面談・follow-up・reportingのsoftware layerを提供。人的serviceではscaleしません。')}</p></div>
+  </div>
+</div></section>
+
+<section class="sec tinted"><div class="wrap">
+  <span class="eyebrow">${L('Commercial model','Model komersial','Commercial model')}</span>
+  <h2>${L('Subscription around active workers and the operating scope.','Subscription berdasarkan active worker dan operating scope.','active workerとoperating scopeを基準にしたsubscription。')}</h2>
+  <div class="grid g3" style="margin-top:28px">
+    <div class="card"><span class="cn">${L('REFERENCE','REFERENSI','REFERENCE')}</span><h3>¥5,000 / ${L('person / month','orang / bulan','人 / 月')}</h3><p>${L('PoC reference price stated in the July 2026 external business plan. Treat as a validation price, not a permanent public list price.','Harga referensi PoC yang tercantum di external business plan Juli 2026. Perlakukan sebagai validation price, bukan permanent public list price.','2026年7月外部事業計画に記載されたPoC参考価格。恒久公開価格ではなく検証価格。')}</p></div>
+    <div class="card"><span class="cn">${L('SCALE DRIVER','SCALE DRIVER','SCALE DRIVER')}</span><h3>${L('Active workers','Active worker','Active worker')}</h3><p>${L('The natural B2B value unit is the number of workers/relationships using the operating layer.','Unit value B2B yang natural adalah jumlah worker/relationship yang memakai operating layer.','B2B value unitはoperating layerを利用するworker/relationship数。')}</p></div>
+    <div class="card"><span class="cn">${L('EXPANSION','EXPANSION','EXPANSION')}</span><h3>${L('Modules & connections','Modul & koneksi','Module・connection')}</h3><p>${L('Future commercial expansion can come from deeper modules and integrations, but packaging should follow validated customer value rather than feature count alone.','Commercial expansion ke depan dapat berasal dari module dan integration lebih dalam, tetapi packaging mengikuti customer value yang tervalidasi, bukan sekadar jumlah feature.','将来はmodule・integration拡張。ただしfeature数ではなくvalidated customer valueでpackage設計。')}</p></div>
+  </div>
+  <p class="note-source">${L('Commercial details should be synchronized with the latest approved sales/pricing decision before external publishing.','Detail komersial harus disinkronkan dengan keputusan sales/pricing terbaru sebelum external publish.','外部公開前に最新のsales/pricing承認内容と同期してください。')}</p>
+</div></section>
+
+<section class="sec"><div class="wrap">
+  <span class="eyebrow">${L('Scope boundary','Batas scope','Scope boundary')}</span>
+  <h2>${L('Scalability comes from staying software-first.','Scalability datang dari tetap software-first.','software-firstを維持してscale。')}</h2>
+  <div class="scope-boundary">
+    <div class="scope-box in"><h3>${L('Inside Emenda','Di dalam Emenda','Emenda内')}</h3><ul>${[
+      L('Multilingual communication and work records','Komunikasi multilingual dan work record','多言語communication・work record'),
+      L('Identity, connection, consent, follow-up, evidence','Identity, connection, consent, follow-up, evidence','ID・connection・consent・follow-up・evidence'),
+      L('Software support for self-managed operations','Software support untuk self-managed operation','自社運用を支えるsoftware'),
+      L('Primary work-data platform and selected connections','Primary work-data platform dan selected connection','一次労働data platform・選択接続')
+    ].map(x=>`<li>✓ ${x}</li>`).join('')}</ul></div>
+    <div class="scope-box out"><h3>${L('Outside the core','Di luar core','core外')}</h3><ul>${[
+      L('Staffing / recruitment placement','Staffing / recruitment placement','人材紹介・配置'),
+      L('Becoming a registered support / supervising organization','Menjadi registered support / supervising organization','登録支援・監理組織になること'),
+      L('Scaling through human-service outsourcing','Scale melalui human-service outsourcing','人的service受託でscale'),
+      L('Selling worker data as a transferable commodity','Menjual worker data sebagai komoditas yang ditransfer','worker dataを移転商品として販売')
+    ].map(x=>`<li>× ${x}</li>`).join('')}</ul></div>
+  </div>
+</div></section>`;
+
+PAGES.marketPositioning=()=>`
+<section class="phero"><div class="wrap">
+  <span class="eyebrow">${L('Company / Market & Positioning','Perusahaan / Market & Positioning','会社 / Market & Positioning')}</span>
+  <h1>${L('A structural window is opening in Japan’s foreign-worker market.','Structural window sedang terbuka di market foreign worker Jepang.','日本の外国人労働市場で構造的なwindowが開いています。')}</h1>
+  <p>${L('The external business plan positions the transition from the Technical Intern Training system to the Employment for Skill Development system in April 2027 as a major market reset: worker mobility, evidence of work/skills, and new operating models become more valuable.','External business plan menempatkan transisi dari Technical Intern Training ke Employment for Skill Development pada April 2027 sebagai market reset besar: mobility worker, evidence pekerjaan/skill, dan operating model baru menjadi lebih bernilai.','2027年4月の技能実習から育成就労への移行を大きなmarket resetと捉え、worker mobility、就労・skill evidence、新しいoperating modelの価値が高まると位置付けています。')}</p>
+</div></section>
+
+<section class="sec"><div class="wrap">
+  <span class="eyebrow">${L('Why now','Mengapa sekarang','Why now')}</span>
+  <h2>${L('The system changes the value of worker-owned work history.','Perubahan sistem meningkatkan nilai work history yang dimiliki worker.','制度変更でworker-owned work historyの価値が上がる。')}</h2>
+  <div class="flow-rail">
+    <div><span class="n">2026</span><b>${L('Final period of the current system','Periode akhir sistem saat ini','現行制度最終期')}</b><p>${L('Build the operating entry layer and validate distribution before the transition.','Bangun operating entry layer dan validasi distribution sebelum transisi.','移行前にoperating entry layerとdistributionを検証。')}</p></div>
+    <div><span class="n">2027.4</span><b>${L('New system begins','Sistem baru mulai','育成就労施行')}</b><p>${L('Mobility and explicit skill/language requirements increase the value of portable evidence.','Mobility dan requirement skill/language yang eksplisit meningkatkan nilai portable evidence.','mobility・skill/language要件明確化でportable evidence価値が上昇。')}</p></div>
+    <div><span class="n">2027–30</span><b>${L('Transition period','Periode transisi','移行期')}</b><p>${L('Establish the worker-centered data layer while the operating order is still being reshaped.','Bangun worker-centered data layer ketika operating order masih berubah.','秩序再編中にworker-centered data layerを確立。')}</p></div>
+    <div><span class="n">NEXT</span><b>${L('ASEAN expansion','Ekspansi ASEAN','ASEAN展開')}</b><p>${L('Carry the data/identity logic toward sending-country and adjacent service contexts.','Bawa data/identity logic menuju sending-country dan adjacent service context.','data/identity logicを送出国・隣接serviceへ展開。')}</p></div>
+  </div>
+</div></section>
+
+<section class="sec tinted"><div class="wrap">
+  <span class="eyebrow">${L('Market layers in the business plan','Layer market dalam business plan','事業計画のmarket layer')}</span>
+  <h2>${L('Stage 1 starts with a focused SaaS market, while the strategic horizon is broader.','Stage 1 dimulai dari SaaS market yang fokus, sementara strategic horizon lebih luas.','Stage 1はfocused SaaS marketから開始し、戦略 horizonはより広い。')}</h2>
+  <div class="market-layers">
+    <div class="market-layer"><span class="layer-id">L1 · STAGE 1–2</span><span class="amount">¥667億</span><h3>${L('Domestic field SaaS for foreign workers','Domestic field SaaS untuk foreign worker','国内外国人労働者向け現場SaaS')}</h3><p>${L('Direct target for the operational tool and context-translation stages in the July 2026 business plan.','Direct target untuk operational tool dan context-translation stage di business plan Juli 2026.','2026年7月事業計画におけるStage 1–2直接対象。')}</p></div>
+    <div class="market-layer"><span class="layer-id">L2 · STAGE 3–4</span><span class="amount">¥900億</span><h3>${L('Registered-support organization market','Market registered-support organization','登録支援機関市場')}</h3><p>${L('Strategic substitution/automation layer as software replaces parts of operational intermediation.','Strategic substitution/automation layer ketika software menggantikan sebagian operational intermediation.','softwareが運用仲介の一部を代替する戦略layer。')}</p></div>
+    <div class="market-layer"><span class="layer-id">L3 · ASEAN</span><span class="amount">¥5兆+</span><h3>${L('Indonesia / ASEAN sending market','Market sending Indonesia / ASEAN','インドネシア・ASEAN送出市場')}</h3><p>${L('Long-horizon expansion where portable work data and identity can travel toward sending-country ecosystems.','Long-horizon expansion di mana portable work data dan identity bergerak menuju sending-country ecosystem.','portable work data・identityを送出国ecosystemへ展開する長期horizon。')}</p></div>
+  </div>
+  <p class="note-source">${L('These market-layer figures are reproduced from the July 2026 external business plan and should be revalidated before investor/public use.','Angka market layer ini berasal dari external business plan Juli 2026 dan perlu divalidasi ulang sebelum dipakai untuk investor/public.','market layer数値は2026年7月外部事業計画の記載。investor/public利用前に再検証してください。')}</p>
+</div></section>
+
+<section class="sec"><div class="wrap">
+  <span class="eyebrow">${L('Positioning','Positioning','Positioning')}</span>
+  <h2>${L('The main differentiation is the subject of the system: the worker is not only a managed object.','Diferensiasi utamanya adalah siapa yang menjadi subjek sistem: worker bukan hanya managed object.','最大の差別化はsystemの主語。workerを管理対象だけにしない。')}</h2>
+  <div class="positioning-grid">
+    <div class="position-col"><h3>${L('Conventional management-first pattern','Pola management-first konvensional','従来のmanagement-first')}</h3>
+      <div class="position-item"><strong>${L('Primary subject','Subjek utama','主語')}</strong>${L('Administrator / procedure / employer.','Administrator / procedure / employer.','管理者・手続き・employer。')}</div>
+      <div class="position-item"><strong>${L('Language model','Model bahasa','言語モデル')}</strong>${L('Japanese first; foreign-language content is a translated secondary layer.','Japanese first; konten bahasa asing sebagai secondary translated layer.','日本語主、外国語は補助翻訳。')}</div>
+      <div class="position-item"><strong>${L('Data origin','Asal data','データ起点')}</strong>${L('Management records created about the worker.','Management record dibuat tentang worker.','workerについて管理側が作るrecord。')}</div>
+      <div class="position-item"><strong>${L('End state','End state','終点')}</strong>${L('Submission / compliance / administrative completion.','Submission / compliance / administrative completion.','提出・compliance・手続き完了。')}</div>
+    </div>
+    <div class="position-col emenda"><h3>EMENDA</h3>
+      <div class="position-item"><strong>${L('Primary subject','Subjek utama','主語')}</strong>${L('Worker as an equal operating subject, connected to organizations.','Worker sebagai subjek operasional yang setara dan terhubung ke organisasi.','workerを対等な業務主体として組織と接続。')}</div>
+      <div class="position-item"><strong>${L('Language model','Model bahasa','言語モデル')}</strong>${L('Both languages remain valid; original is preserved and translation is additive.','Kedua bahasa sama-sama valid; original dipertahankan dan translation bersifat additive.','両言語を対等に保持し、原文＋translation。')}</div>
+      <div class="position-item"><strong>${L('Data origin','Asal data','データ起点')}</strong>${L('Primary work data originates in the worker’s real daily activity.','Primary work data berasal dari aktivitas harian nyata worker.','一次労働dataがworkerの日々の活動から発生。')}</div>
+      <div class="position-item"><strong>${L('End state','End state','終点')}</strong>${L('Outcome, evidence, history, and portable continuity.','Outcome, evidence, history, dan portable continuity.','outcome・evidence・history・portable continuity。')}</div>
+    </div>
+  </div>
+</div></section>`;
+
+PAGES.faq=()=>`
+<section class="phero"><div class="wrap">
+  <span class="eyebrow">${L('Resources / FAQ','Resources / FAQ','リソース / FAQ')}</span>
+  <h1>${L('Questions about product scope, AI, data, deployment, and business model.','Pertanyaan tentang product scope, AI, data, deployment, dan business model.','product scope、AI、data、deployment、business modelに関するFAQ。')}</h1>
+  <p>${L('This FAQ distinguishes current product scope from roadmap/vision so external audiences do not mistake future concepts for shipped capability.','FAQ ini membedakan current product scope dari roadmap/vision agar audience eksternal tidak menganggap future concept sebagai capability yang sudah shipped.','current scopeとroadmap/visionを分離し、将来conceptを実装済みと誤認させないためのFAQです。')}</p>
+</div></section>
+<section class="sec"><div class="wrap"><div class="faq">
+${[
+  [L('Is Emenda only a chat or HR app?','Apakah Emenda hanya chat atau HR app?','Emendaはchat/HR appだけですか？'),L('No. Communication is the entry layer, but the product also covers identity, work records, follow-up, consent/privacy, analytics, notifications, organization management, and a contextual assistant.','Tidak. Communication adalah entry layer, tetapi produk juga mencakup identity, work record, follow-up, consent/privacy, analytics, notification, organization management, dan contextual assistant.','いいえ。communicationは入口で、identity、work record、follow-up、consent/privacy、analytics、notification、organization management、assistantまで含みます。')],
+  [L('How many features are actually in the product catalog?','Berapa fitur yang ada di product catalog?','Product catalogには何機能ありますか？'),L('The frozen v1.0 r10 catalog records 59 approved features and 27 candidates. Candidate features are not sellable/approved scope until ruled by the Product Owner.','Katalog frozen v1.0 r10 mencatat 59 approved feature dan 27 candidate. Candidate bukan sellable/approved scope sampai diputuskan Product Owner.','v1.0 r10では59 Approved、27 Candidate。CandidateはProduct Owner判断までApproved scopeではありません。')],
+  [L('What is available now versus roadmap?','Apa yang tersedia sekarang vs roadmap?','現在利用可能とroadmapの違いは？'),L('The catalog assigns features to R1–R4 and maturity labels such as MVP, Roadmap, and Vision. The website should preserve those distinctions instead of presenting the full long-term vision as already shipped.','Katalog memetakan feature ke R1–R4 dan label maturity seperti MVP, Roadmap, dan Vision. Website harus menjaga perbedaan ini.','R1–R4とMVP/Roadmap/Visionを明示し、長期visionを実装済みとして表示しません。')],
+  [L('Does translation overwrite the original message?','Apakah translation mengganti pesan original?','translationは原文を上書きしますか？'),L('No. Original content is retained; translation is an additive layer. This is a core product integrity rule.','Tidak. Original content dipertahankan; translation adalah additive layer. Ini core product integrity rule.','いいえ。原文を保持しtranslationは追加layerです。')],
+  [L('Can AI take actions silently?','Apakah AI dapat melakukan action diam-diam?','AIが無断でactionできますか？'),L('No for sensitive actions. Location, call, email, SMS, calendar, contacts, and similar capabilities require explicit user permission and scoped context.','Tidak untuk action sensitif. Location, call, email, SMS, calendar, contacts, dan capability serupa membutuhkan explicit user permission.','機微なactionは不可。location、call、email、SMS、calendar、contacts等は明示permissionが必要です。')],
+  [L('What is the technical stack?','Apa technology stack-nya?','technical stackは？'),L('Frontend: Vite 8.2, React 19.2, TypeScript 6.0, Tailwind CSS 4.3, react-router-dom 7.18, lucide-react 1.31, recharts 3.10, sonner 2.0, oxlint 1.75, Playwright 1.62. Backend: Node.js. Database: Supabase. Hosting: Hostinger VPS. Exact backend framework/version and operational standards should be added only when formally confirmed.','Frontend: Vite 8.2, React 19.2, TypeScript 6.0, Tailwind CSS 4.3, react-router-dom 7.18, lucide-react 1.31, recharts 3.10, sonner 2.0, oxlint 1.75, Playwright 1.62. Backend: Node.js. Database: Supabase. Hosting: Hostinger VPS. Detail backend framework/version dan standard operasi ditambahkan setelah dikonfirmasi formal.','Frontend: Vite 8.2、React 19.2、TypeScript 6.0、Tailwind CSS 4.3等。Backend: Node.js、DB: Supabase、Hosting: Hostinger VPS。詳細version/運用standardは正式確認後。')],
+  [L('Does the organization own the worker’s identity?','Apakah organisasi memiliki identity worker?','組織がworker identityを所有しますか？'),L('The product model separates durable worker identity from time-bound employment relationships. Employer visibility depends on relationship, purpose, permissions, and privacy rules.','Product model memisahkan durable worker identity dari time-bound employment relationship. Employer visibility bergantung relationship, purpose, permission, dan privacy rule.','durable worker identityとtime-bound employment relationshipを分離し、employer visibilityは関係・目的・権限で決まります。')],
+  [L('What industries are in scope?','Industry apa yang masuk scope?','対象industryは？'),L('Caregiving is the current fixed MVP showcase. Earlier strategy documents discussed caregiving + construction cross-validation, while later MVP decisions narrowed the immediate implementation to caregiving first. Other verticals should be shown as adaptable or next-phase, not as fully shipped.','Caregiving adalah fixed MVP showcase saat ini. Dokumen strategy sebelumnya membahas caregiving + construction cross-validation, tetapi keputusan MVP berikutnya mempersempit immediate implementation ke caregiving terlebih dahulu. Vertical lain harus ditampilkan sebagai adaptable/next phase.','現在のfixed MVP showcaseは介護。以前のstrategyでは介護＋建設cross-validationを検討したが、後のMVP判断で介護優先に絞っています。')],
+  [L('How does implementation start?','Bagaimana implementasi dimulai?','導入はどう始まりますか？'),L('Start with current-state discovery and one high-friction workflow, then fit-gap, configuration, required integration, controlled pilot, evaluation, and rollout. The research plan prioritizes behavioral evidence over hypothetical feature preference.','Mulai dari current-state discovery dan satu high-friction workflow, lalu fit-gap, configuration, required integration, controlled pilot, evaluation, dan rollout. Research plan memprioritaskan behavioral evidence dibanding hypothetical feature preference.','current-state discoveryとfrictionの高い1workflowから開始し、fit-gap→configuration→integration→pilot→evaluation→rollout。behavioral evidenceを優先します。')],
+  [L('Where can I see the real product UI?','Di mana melihat UI produk sebenarnya?','実際のUIはどこで見られますか？'),L('Use the fixed Worker mobile Figma as the visual source of truth. Use emenda.tech for the running demo.','Gunakan fixed Worker mobile Figma sebagai visual source of truth. Gunakan emenda.tech untuk running demo.','UI正本はfixed Worker mobile Figma。動作demoはemenda.tech。')]
+].map(([q,a])=>`<div class="faq-item"><button class="faq-q">${q}<span class="pm">+</span></button><div class="faq-a">${a}</div></div>`).join('')}
+</div></div></section>
+${detailedCTA()}`;
+
+
+const _homeV14=PAGES.home;
+PAGES.home=()=>_homeV14()+`
+<section class="sec tinted"><div class="wrap">
+  <span class="eyebrow">${L('Explore the full story','Jelajahi cerita lengkap','全体を詳しく見る')}</span>
+  <h2>${L('The summary is on Home. The evidence and depth live on dedicated pages.','Ringkasannya ada di Home. Evidence dan detailnya ada di halaman khusus.','Homeは概要。evidenceと詳細は専用pageへ。')}</h2>
+  <div class="page-links">
+    <a href="#/feature-catalog" data-nav class="page-link-card">${ic('layers')}<b>${L('Feature Catalog','Katalog Fitur','機能カタログ')}</b><span>${L('59 approved features, 27 candidates, 15 module groups, releases and maturity.','59 approved feature, 27 candidate, 15 module group, release dan maturity.','59 Approved、27 Candidate、15 module group、release・maturity。')}</span></a>
+    <a href="#/implementation" data-nav class="page-link-card">${ic('route')}<b>${L('Implementation','Implementasi','導入')}</b><span>${L('Discovery, fit-gap, configuration, integration, pilot, evaluation, rollout and KPIs.','Discovery, fit-gap, configuration, integration, pilot, evaluation, rollout, dan KPI.','Discovery、fit-gap、configuration、integration、pilot、evaluation、rollout、KPI。')}</span></a>
+    <a href="#/market-positioning" data-nav class="page-link-card">${ic('compass')}<b>${L('Market & Positioning','Market & Positioning','Market & Positioning')}</b><span>${L('2027 transition, market layers, business thesis and worker-centered differentiation.','Transisi 2027, market layer, business thesis, dan diferensiasi worker-centered.','2027 transition、market layer、business thesis、worker-centered differentiation。')}</span></a>
+  </div>
+</div></section>`;
+
+
+/* ============================================================ V15 · EXHAUSTIVE PAGE DEPTH · CORE ============================================================ */
+const sourcePanel=(en,id,ja)=>`<div class="source-panel"><b>${L('Internal source basis','Basis sumber internal','内部ソース')}</b><p>${L(en,id,ja)}</p></div>`;
+
+const _homeV15Base=PAGES.home;
+PAGES.home=()=>_homeV15Base()+`
+<section class="sec" id="home-directory"><div class="wrap">
+  <span class="eyebrow">${L('Website directory','Direktori website','サイト案内')}</span>
+  <h2>${L('A different page for each question a stakeholder may ask.','Setiap pertanyaan stakeholder punya halaman detailnya sendiri.','stakeholderの質問ごとに専用ページを用意。')}</h2>
+  <div class="detail-grid">
+    <div class="detail-card"><div class="code">PRODUCT</div><h3>${L('What exactly is included?','Apa saja yang benar-benar termasuk?','何が含まれるか')}</h3><p>${L('Use Product, Feature Catalog, Modules, and Follow-up Lifecycle for official scope, maturity, dependencies, and the operating model.','Gunakan Product, Feature Catalog, Modules, dan Follow-up Lifecycle untuk scope resmi, maturity, dependency, dan operating model.','Product、Feature Catalog、Modules、Lifecycleでscope・maturity・dependency・operating modelを確認。')}</p></div>
+    <div class="detail-card"><div class="code">USERS</div><h3>${L('How does each role use it?','Bagaimana tiap role menggunakannya?','各roleはどう使うか')}</h3><p>${L('Worker, Manager, and Organization pages explain jobs, workflows, states, privacy boundaries, and success measures separately.','Page Worker, Manager, dan Organization menjelaskan job, workflow, state, privacy boundary, dan success measure secara terpisah.','Worker・Manager・Organization別にjob、workflow、state、privacy、success measureを説明。')}</p></div>
+    <div class="detail-card"><div class="code">TECH</div><h3>${L('How is it built and governed?','Bagaimana dibangun dan di-govern?','どう構築・管理するか')}</h3><p>${L('Platform, Assistant, Architecture, Integration & Data, and Security pages describe contracts, stack, data ownership, consent, and failure behavior.','Platform, Assistant, Architecture, Integration & Data, dan Security menjelaskan contract, stack, data ownership, consent, dan failure behavior.','Platform、Assistant、Architecture、Integration、Securityでcontract、stack、data ownership、consent、failureを説明。')}</p></div>
+    <div class="detail-card"><div class="code">ADOPTION</div><h3>${L('How would a company adopt it?','Bagaimana perusahaan mengadopsinya?','企業導入はどう進むか')}</h3><p>${L('Implementation explains discovery, pilot evidence, telemetry, evaluation, and rollout rather than assuming a generic SaaS deployment.','Implementation menjelaskan discovery, pilot evidence, telemetry, evaluation, dan rollout, bukan generic SaaS deployment.','Implementationでdiscovery、pilot evidence、telemetry、evaluation、rolloutを説明。')}</p></div>
+    <div class="detail-card"><div class="code">BUSINESS</div><h3>${L('Why should this exist as a business?','Mengapa ini layak menjadi bisnis?','なぜ事業になるか')}</h3><p>${L('Company, Business Model, and Market & Positioning cover the Stage 1 entry value, buyer problem, structural timing, scope boundary, and long-term data thesis.','Company, Business Model, dan Market & Positioning membahas Stage 1 entry value, buyer problem, structural timing, scope boundary, dan long-term data thesis.','Company、Business Model、MarketでStage 1 value、buyer problem、timing、scope、data thesisを説明。')}</p></div>
+    <div class="detail-card"><div class="code">PROOF</div><h3>${L('Where is the design and running product?','Di mana design dan running product?','designと実動productはどこか')}</h3><p>${L('The fixed Worker mobile Figma remains the visual source of truth; emenda.tech remains the direct demo destination.','Fixed Worker mobile Figma tetap menjadi visual source of truth; emenda.tech tetap menjadi tujuan demo langsung.','確定Worker mobile Figmaがvisual source of truth、emenda.techがdirect demo。')}</p></div>
+  </div>
+</div></section>`;
+
+const _productV15Base=PAGES.product;
+PAGES.product=()=>_productV15Base()+`
+<section class="sec tinted" id="product-entities"><div class="wrap">
+  <span class="eyebrow">${L('Core product entities','Entity inti produk','コアentity')}</span>
+  <h2>${L('The product is organized around durable entities, not isolated screens.','Produk disusun berdasarkan entity yang durable, bukan screen yang terpisah-pisah.','screen単位ではなくdurable entityを中心に構成。')}</h2>
+  <div class="data-strip">
+    <div class="data-box"><b>Worker / EMENDA ID</b><span>${L('Durable identity that can exist before, during, and after an employment connection.','Identity durable yang dapat ada sebelum, selama, dan setelah employment connection.','雇用接続前・中・後も継続するidentity。')}</span></div>
+    <div class="data-box"><b>${L('Organization relationship','Hubungan organisasi','組織relationship')}</b><span>${L('Time-bound connection that determines operational visibility and responsibility.','Connection berbatas waktu yang menentukan operational visibility dan responsibility.','期間限定connectionでoperational visibility・responsibilityを決定。')}</span></div>
+    <div class="data-box"><b>${L('Operational record','Operational record','Operational record')}</b><span>${L('Reports, communication, follow-up, verification, decisions, timestamps, and evidence.','Report, communication, follow-up, verification, decision, timestamp, dan evidence.','report、communication、follow-up、verification、decision、timestamp、evidence。')}</span></div>
+    <div class="data-box"><b>${L('Consent & permission','Consent & permission','Consent・permission')}</b><span>${L('Durable record of what can be viewed or acted on, by whom, for what purpose.','Record durable tentang apa yang dapat dilihat atau dilakukan, oleh siapa, untuk purpose apa.','誰が何の目的で閲覧・操作できるかを記録。')}</span></div>
+  </div>
+</div></section>
+<section class="sec" id="product-state"><div class="wrap">
+  <span class="eyebrow">${L('Cross-product state model','Model state lintas produk','横断state model')}</span>
+  <h2>${L('Important actions should have explicit state, not ambiguous UI.','Action penting harus punya state eksplisit, bukan UI yang ambigu.','重要actionは曖昧なUIではなく明示stateを持つ。')}</h2>
+  <div class="spec-table-wrap"><table class="spec-table"><thead><tr><th>${L('Object','Objek','Object')}</th><th>${L('Typical states','State umum','主なstate')}</th><th>${L('Why state matters','Mengapa state penting','stateの意味')}</th><th>${L('Who sees it','Siapa yang melihat','閲覧者')}</th></tr></thead><tbody>
+    <tr><td>${L('Identity verification','Verifikasi identity','Identity verification')}</td><td>unverified · pending · verified · needs review · failed</td><td>${L('Prevents verification from being treated as a yes/no decoration.','Mencegah verification diperlakukan sekadar dekorasi yes/no.','verificationを単純yes/no表示にしない。')}</td><td>Worker · permitted admin</td></tr>
+    <tr><td>${L('Employment connection','Employment connection','Employment connection')}</td><td>requested · accepted · active · ended · reconnectable</td><td>${L('Separates durable identity from employer relationship.','Memisahkan durable identity dari employer relationship.','durable identityとemployer relationshipを分離。')}</td><td>Worker · Organization</td></tr>
+    <tr><td>${L('Daily report','Daily report','Daily report')}</td><td>draft · review · submitting · submitted · verified · failed</td><td>${L('Makes submission and manager verification visible to both sides.','Membuat submission dan manager verification terlihat oleh kedua sisi.','submission・manager verificationを双方に可視化。')}</td><td>Worker · Manager</td></tr>
+    <tr><td>${L('Follow-up','Follow-up','Follow-up')}</td><td>open · owned · waiting · in progress · resolved · closed</td><td>${L('Prevents issues from disappearing after the initial report/message.','Mencegah issue hilang setelah report/message awal.','初回report/message後にissueが消えない。')}</td><td>Relevant roles</td></tr>
+    <tr><td>${L('AI action','AI action','AI action')}</td><td>proposed · permission required · approved · executing · success · failed</td><td>${L('Sensitive actions never look completed before permission and execution succeed.','Action sensitif tidak terlihat selesai sebelum permission dan execution berhasil.','permission・execution成功前に完了扱いしない。')}</td><td>User · audit trail</td></tr>
+  </tbody></table></div>
+</div></section>
+<section class="sec tinted" id="product-boundaries"><div class="wrap">
+  <span class="eyebrow">${L('Product boundaries','Batas produk','Product boundary')}</span>
+  <h2>${L('What should remain stable while features evolve.','Apa yang harus tetap stabil saat feature berkembang.','featureが進化しても維持するもの。')}</h2>
+  <div class="decision-band">
+    <div class="decision-box good"><h3>${L('Stable core','Core yang stabil','Stable core')}</h3><p>${L('Worker-owned identity, explicit employment relationship, original-language integrity, role/purpose access, follow-up to outcome, evidence/history, and one user-facing Assistant identity.','Worker-owned identity, explicit employment relationship, original-language integrity, role/purpose access, follow-up sampai outcome, evidence/history, dan satu user-facing Assistant identity.','worker-owned identity、employment relationship、原文保持、role/purpose access、outcome follow-up、evidence/history、single Assistant。')}</p></div>
+    <div class="decision-box caution"><h3>${L('Configurable / evidence-dependent','Configurable / bergantung evidence','Configurable / evidence-dependent')}</h3><p>${L('Industry templates, native manager mobile need, advanced health/life data, community, score/coin, additional integrations, and automation depth should expand only when user, legal, and business evidence supports them.','Industry template, kebutuhan native manager mobile, advanced health/life data, community, score/coin, additional integration, dan automation depth berkembang hanya bila didukung user, legal, dan business evidence.','industry template、manager mobile、health/life data、community、score/coin、integration、automationはevidenceに基づき拡張。')}</p></div>
+  </div>
+  ${sourcePanel('The UX research baseline explicitly separates architecture directions and business hypotheses from validated user needs.','Baseline UX research secara eksplisit memisahkan architecture direction dan business hypothesis dari validated user need.','UX research baselineはarchitecture direction・business hypothesisとvalidated user needを明確に分離。')}
+</div></section>`;
+
+const _catalogV15Base=PAGES.featureCatalog;
+PAGES.featureCatalog=()=>_catalogV15Base()+`
+<section class="sec" id="catalog-governance"><div class="wrap">
+  <span class="eyebrow">${L('Catalog governance','Governance katalog','Catalog governance')}</span>
+  <h2>${L('A feature is not in scope just because it appears in a discussion or Figma exploration.','Feature tidak otomatis in scope hanya karena muncul di diskusi atau eksplorasi Figma.','discussionやFigma探索に出ただけでscopeにはならない。')}</h2>
+  <div class="matrix-grid">
+    <div class="mh">${L('Status','Status','Status')}</div><div class="mh">${L('Meaning','Arti','意味')}</div><div class="mh">${L('Can be promised?','Boleh dijanjikan?','約束可能か')}</div><div class="mh">${L('Required action','Action yang dibutuhkan','必要action')}</div>
+    <div class="mr">Approved</div><div>${L('Product Owner has accepted the feature into catalog scope.','Product Owner sudah menerima feature ke catalog scope.','Product Ownerがcatalog scopeへ承認。')}</div><div>${L('Only according to its release/maturity label.','Hanya sesuai label release/maturity.','release/maturity labelの範囲のみ。')}</div><div>${L('Design, build, QA, and document to the approved behavior.','Design, build, QA, dan dokumentasikan sesuai approved behavior.','approved behaviorに沿ってdesign/build/QA。')}</div>
+    <div class="mr">Candidate</div><div>${L('A potentially useful idea awaiting explicit ruling.','Ide yang berpotensi berguna dan menunggu keputusan eksplisit.','明示判断待ちの候補。')}</div><div>${L('No. Do not sell or present as committed.','Tidak. Jangan dijual atau ditampilkan sebagai committed.','不可。committedとして提示しない。')}</div><div>${L('Research, feasibility, privacy/legal, and business-value validation as relevant.','Research, feasibility, privacy/legal, dan business-value validation sesuai kebutuhan.','research、feasibility、privacy/legal、business validation。')}</div>
+    <div class="mr">Roadmap / Vision</div><div>${L('Direction beyond immediate MVP maturity.','Arah di luar maturity MVP langsung.','即時MVPを超える方向性。')}</div><div>${L('Only as future direction with clear labeling.','Hanya sebagai future direction dengan label jelas.','future directionとして明示。')}</div><div>${L('Protect current product from future-scope leakage.','Lindungi current product dari future-scope leakage.','future scopeのcurrent product混入を防止。')}</div>
+  </div>
+</div></section>
+<section class="sec tinted" id="catalog-rules"><div class="wrap">
+  <span class="eyebrow">${L('Scope decision rules','Aturan keputusan scope','Scope判断ルール')}</span>
+  <h2>${L('High-risk or speculative modules have a higher evidence bar.','Module berisiko tinggi atau spekulatif membutuhkan evidence bar yang lebih tinggi.','高リスク・speculative moduleは高いevidence barを要求。')}</h2>
+  <div class="detail-grid">
+    <div class="detail-card span6"><div class="code">HEALTH / LIFE</div><h3>${L('Least-sensitive-data rule','Aturan least-sensitive data','Least-sensitive-data rule')}</h3><p>${L('Do not integrate health/life data merely because the data exists. A validated job-to-be-done, concrete user benefit, exact field need, consent willingness, access rule, and technical feasibility are required first.','Jangan integrasikan health/life data hanya karena datanya tersedia. Harus ada validated job-to-be-done, concrete user benefit, exact field need, consent willingness, access rule, dan technical feasibility.','health/life dataは存在するだけで連携しない。validated JTBD、benefit、field、consent、access、feasibilityが必要。')}</p></div>
+    <div class="detail-card span6"><div class="code">COMMUNITY / REWARD</div><h3>${L('Prove supply and demand first','Buktikan supply dan demand dulu','Supply-demandを先に証明')}</h3><p>${L('Community/Q&A and reward economy should not be built before a concierge/manual pilot proves recurring unanswered questions, reliable answer supply, trust, and moderation feasibility.','Community/Q&A dan reward economy tidak dibangun sebelum concierge/manual pilot membuktikan recurring unanswered question, reliable answer supply, trust, dan moderation feasibility.','community/Q&A・rewardはconcierge pilotでquestion supply、answer supply、trust、moderationを検証後。')}</p></div>
+    <div class="detail-card span6"><div class="code">DASHBOARD</div><h3>${L('No vanity metrics','Tidak ada vanity metric','Vanity metric禁止')}</h3><p>${L('A manager/executive metric belongs on the product only if it has a decision use-case, owner, baseline, reliable event source, threshold, and clear action.','Metric manager/executive masuk product hanya jika punya decision use-case, owner, baseline, reliable event source, threshold, dan clear action.','metricはdecision use-case、owner、baseline、reliable event、threshold、actionがある場合のみ。')}</p></div>
+    <div class="detail-card span6"><div class="code">MOBILE</div><h3>${L('Do not assume device strategy','Jangan asumsi device strategy','Device strategyを仮定しない')}</h3><p>${L('Native manager mobile should be justified by away-from-desk ratio, device usage, urgency, response delay, and task frequency instead of preference alone.','Native manager mobile dibenarkan oleh away-from-desk ratio, device usage, urgency, response delay, dan task frequency, bukan preference saja.','manager mobileはaway-from-desk、device、urgency、response delay、frequencyで判断。')}</p></div>
+  </div>
+</div></section>`;
+
+const _followV15Base=PAGES.followupLifecycle;
+PAGES.followupLifecycle=()=>_followV15Base()+`
+<section class="sec" id="follow-responsibility"><div class="wrap">
+  <span class="eyebrow">${L('Responsibility model','Model responsibility','Responsibility model')}</span><h2>${L('Every transition answers who must do what next.','Setiap transisi menjawab siapa harus melakukan apa berikutnya.','各transitionで次に誰が何をするかを明確化。')}</h2>
+  <div class="matrix-grid">
+    <div class="mh">${L('Stage','Tahap','Stage')}</div><div class="mh">Worker</div><div class="mh">Manager</div><div class="mh">Organization</div>
+    <div class="mr">${L('Report / request','Report / request','Report / request')}</div><div>${L('Create context and submit the original information.','Membuat context dan submit informasi original.','context作成・原情報提出。')}</div><div>${L('Receive in the correct worker/time context.','Menerima dalam context worker/waktu yang benar.','正しいworker/time contextで受領。')}</div><div>${L('Provide templates and role rules.','Menyediakan template dan role rule.','template・role rule提供。')}</div>
+    <div class="mr">${L('Review / clarify','Review / clarify','Review / clarify')}</div><div>${L('Answer clarification without losing the original thread.','Menjawab klarifikasi tanpa kehilangan original thread.','original threadを維持して回答。')}</div><div>${L('Verify, ask, prioritize, or escalate.','Verify, ask, prioritize, atau escalate.','verify、ask、prioritize、escalate。')}</div><div>${L('Ensure manager mapping and access are valid.','Memastikan manager mapping dan access valid.','manager mapping・accessを保証。')}</div>
+    <div class="mr">${L('Follow-up','Follow-up','Follow-up')}</div><div>${L('See owner, status, and what is expected from the worker.','Melihat owner, status, dan apa yang diharapkan dari worker.','owner、status、worker側actionを確認。')}</div><div>${L('Own or assign next action and maintain status.','Memiliki atau assign next action dan menjaga status.','next actionをown/assignしstatus維持。')}</div><div>${L('Define escalation/governance rules.','Menentukan escalation/governance rule.','escalation/governance rule定義。')}</div>
+    <div class="mr">${L('Outcome / closure','Outcome / closure','Outcome / closure')}</div><div>${L('Receive result and confirm when applicable.','Menerima hasil dan konfirmasi bila diperlukan.','結果受領・必要時確認。')}</div><div>${L('Record resolution and evidence.','Mencatat resolution dan evidence.','resolution・evidence記録。')}</div><div>${L('Retain auditable history under policy.','Menyimpan auditable history sesuai policy.','policyに基づきaudit history保持。')}</div>
+  </div>
+</div></section>
+<section class="sec tinted" id="follow-exceptions"><div class="wrap">
+  <span class="eyebrow">${L('Exception handling','Penanganan exception','Exception handling')}</span><h2>${L('A lifecycle is only useful if it handles waiting, failure, and ambiguity.','Lifecycle berguna hanya jika menangani waiting, failure, dan ambiguity.','waiting・failure・ambiguityを扱えてこそ有効。')}</h2>
+  <div class="edge-list">
+    <div class="edge-item"><b>${L('No owner assigned','Belum ada owner','Owner未設定')}</b><p>${L('The item must remain visibly unowned rather than looking in progress.','Item harus terlihat jelas unowned, bukan seolah in progress.','in progressに見せずunownedを明示。')}</p><span class="response">${L('Route to assignment queue','Masuk assignment queue','assignment queueへ')}</span></div>
+    <div class="edge-item"><b>${L('Waiting on worker','Menunggu worker','Worker待ち')}</b><p>${L('Show exactly what information/action is missing and keep waiting age visible.','Tampilkan informasi/action apa yang kurang dan usia waiting state.','不足情報/actionとwaiting ageを表示。')}</p><span class="response">${L('Reminder / clarify','Reminder / clarify','Reminder / clarify')}</span></div>
+    <div class="edge-item"><b>${L('Waiting external dependency','Menunggu dependency eksternal','外部dependency待ち')}</b><p>${L('Do not close the case; record dependency and expected next checkpoint.','Jangan close case; catat dependency dan expected next checkpoint.','caseをcloseせずdependency・next checkpointを記録。')}</p><span class="response">Blocked</span></div>
+    <div class="edge-item"><b>${L('Action failed','Action gagal','Action失敗')}</b><p>${L('Failure reason and attempted action stay attached to the same case.','Failure reason dan attempted action tetap attached ke case yang sama.','failure reason・attempted actionを同一caseに保持。')}</p><span class="response">Retry / alternate / human</span></div>
+    <div class="edge-item"><b>${L('Resolved but disputed','Resolved tetapi diperdebatkan','Resolved異議あり')}</b><p>${L('Allow outcome confirmation or reopening rather than forcing closure.','Izinkan outcome confirmation atau reopening, bukan memaksa closure.','outcome confirmation・reopenを許可。')}</p><span class="response">Confirm / reopen</span></div>
+  </div>
+</div></section>`;
+
+const _modulesV15Base=PAGES.modulesDetail;
+PAGES.modulesDetail=()=>_modulesV15Base()+`
+<section class="sec" id="module-outputs"><div class="wrap">
+  <span class="eyebrow">${L('What each module contributes','Kontribusi tiap modul','各moduleの出力')}</span><h2>${L('The value is in what each module adds to the shared operating record.','Value ada pada kontribusi tiap modul ke shared operating record.','各moduleがshared operating recordへ何を追加するかが価値。')}</h2>
+  <div class="spec-table-wrap"><table class="spec-table"><thead><tr><th>${L('Module family','Keluarga modul','Module family')}</th><th>${L('Primary data/output','Data/output utama','Primary data/output')}</th><th>${L('Consumed by','Dipakai oleh','利用先')}</th><th>${L('Boundary','Boundary','Boundary')}</th></tr></thead><tbody>
+    <tr><td>Identity & Access</td><td>${L('Worker ID, account state, language, organization relationship, verification status.','Worker ID, account state, bahasa, organization relationship, verification status.','Worker ID、account state、言語、organization relationship、verification status。')}</td><td>${L('All role-aware modules.','Semua modul role-aware.','全role-aware module。')}</td><td>${L('Identity persists beyond employment.','Identity bertahan di luar employment.','Identityはemploymentを超えて継続。')}</td></tr>
+    <tr><td>Communication & Translation</td><td>${L('Original message, translation, intent/context, receipts, thread history.','Original message, translation, intent/context, receipt, thread history.','原文、translation、intent/context、receipt、thread history。')}</td><td>${L('Follow-up, work records, Assistant, audit.','Follow-up, work record, Assistant, audit.','follow-up、work record、Assistant、audit。')}</td><td>${L('Original remains source of truth.','Original tetap source of truth.','原文がsource of truth。')}</td></tr>
+    <tr><td>Work Records</td><td>${L('Structured daily activity, free text, template fields, submission/verification state.','Structured daily activity, free text, template field, submission/verification state.','structured daily activity、free text、template field、submission/verification state。')}</td><td>${L('Manager review, timeline, analytics.','Manager review, timeline, analytics.','manager review、timeline、analytics。')}</td><td>${L('Industry template is configurable.','Industry template configurable.','industry templateはconfigurable。')}</td></tr>
+    <tr><td>Consent & Privacy</td><td>${L('Disclosure, consent decision, visibility scope, re-consent history.','Disclosure, consent decision, visibility scope, re-consent history.','disclosure、consent、visibility scope、re-consent history。')}</td><td>${L('Data access and sensitive actions.','Data access dan sensitive action.','data access・sensitive action。')}</td><td>${L('No implied consent from employment.','Tidak ada implied consent dari employment.','employmentによるimplied consentなし。')}</td></tr>
+    <tr><td>Measurement</td><td>${L('Reliable events and operational metrics tied to decisions.','Reliable event dan operational metric yang terkait decision.','reliable event・decisionに結びつくmetric。')}</td><td>${L('Pilot evaluation and manager/executive views.','Pilot evaluation dan manager/executive view.','pilot evaluation・manager/executive view。')}</td><td>${L('No metric without owner/action/source.','Tidak ada metric tanpa owner/action/source.','owner/action/sourceなしのmetricは出さない。')}</td></tr>
+  </tbody></table></div>
+</div></section>`;
+
+const _solutionsV15Base=PAGES.solutions;
+PAGES.solutions=()=>_solutionsV15Base()+`
+<section class="sec" id="solution-responsibility"><div class="wrap">
+  <span class="eyebrow">${L('Role responsibility map','Peta tanggung jawab role','Role responsibility map')}</span><h2>${L('Shared data does not mean shared permissions or identical screens.','Shared data tidak berarti permission sama atau screen identik.','shared dataでもpermission・screenは同一ではない。')}</h2>
+  <div class="matrix-grid">
+    <div class="mh">${L('Responsibility','Tanggung jawab','Responsibility')}</div><div class="mh">Worker</div><div class="mh">Manager</div><div class="mh">Organization / Admin</div>
+    <div class="mr">${L('Own personal identity','Memiliki personal identity','Personal identity保有')}</div><div>● ${L('Primary','Utama','Primary')}</div><div>${L('Permitted view','View terbatas izin','Permitted view')}</div><div>${L('Policy boundary','Policy boundary','Policy boundary')}</div>
+    <div class="mr">${L('Create work context','Membuat work context','Work context作成')}</div><div>●</div><div>${L('Review / clarify','Review / clarify','Review / clarify')}</div><div>${L('Template / policy','Template / policy','Template / policy')}</div>
+    <div class="mr">${L('Operational decision','Keputusan operasional','Operational decision')}</div><div>${L('Input / confirmation','Input / confirmation','Input / confirmation')}</div><div>● ${L('Primary','Utama','Primary')}</div><div>${L('Escalation rule','Escalation rule','Escalation rule')}</div>
+    <div class="mr">${L('Govern access','Mengatur access','Access governance')}</div><div>${L('Consent choice','Consent choice','Consent choice')}</div><div>${L('Role-limited','Role-limited','Role-limited')}</div><div>● ${L('Primary','Utama','Primary')}</div>
+    <div class="mr">${L('Close outcome','Menutup outcome','Outcome closure')}</div><div>${L('See / confirm','Lihat / confirm','View / confirm')}</div><div>${L('Resolve / close','Resolve / close','Resolve / close')}</div><div>${L('Audit / retain','Audit / retain','Audit / retain')}</div>
+  </div>
+</div></section>`;
+
 /* ============================================================ LANGUAGE / I18N ============================================================ */
 const I18N = {
   id: {
@@ -2536,6 +3027,7 @@ const ROUTE_TO_PAGE={
   '':'home',
   'home':'home',
   'product':'product',
+  'feature-catalog':'featureCatalog',
   'follow-up-lifecycle':'followupLifecycle',
   'modules':'modulesDetail',
   'solutions':'solutions',
@@ -2546,15 +3038,21 @@ const ROUTE_TO_PAGE={
   'platform':'platform',
   'emenda-assistant':'platformAssistant',
   'architecture':'platformArchitecture',
+  'integration-data':'integrationData',
   'security-privacy':'platformSecurity',
   'resources':'resources',
-  'company':'company'
+  'implementation':'implementation',
+  'faq':'faq',
+  'company':'company',
+  'business-model':'businessModel',
+  'market-positioning':'marketPositioning'
 };
 
 const PAGE_TO_ROUTE={
   home:'home',
   product:'product',
   productOverview:'product',
+  featureCatalog:'feature-catalog',
   followupLifecycle:'follow-up-lifecycle',
   modulesDetail:'modules',
   solutions:'solutions',
@@ -2565,9 +3063,14 @@ const PAGE_TO_ROUTE={
   platform:'platform',
   platformAssistant:'emenda-assistant',
   platformArchitecture:'architecture',
+  integrationData:'integration-data',
   platformSecurity:'security-privacy',
   resources:'resources',
-  company:'company'
+  implementation:'implementation',
+  faq:'faq',
+  company:'company',
+  businessModel:'business-model',
+  marketPositioning:'market-positioning'
 };
 
 function currentRoute(){
@@ -2591,6 +3094,7 @@ function goPage(page){
 function setActiveNav(page){
   const family=({
     productOverview:'product',
+    featureCatalog:'product',
     followupLifecycle:'product',
     modulesDetail:'product',
     solutionsWorker:'solutions',
@@ -2598,7 +3102,12 @@ function setActiveNav(page){
     solutionsOrg:'solutions',
     platformAssistant:'platform',
     platformArchitecture:'platform',
-    platformSecurity:'platform'
+    integrationData:'platform',
+    platformSecurity:'platform',
+    implementation:'resources',
+    faq:'resources',
+    businessModel:'company',
+    marketPositioning:'company'
   })[page]||page;
   document.querySelectorAll('.nav-link[data-page]').forEach(a=>{
     a.classList.toggle('active',a.dataset.page===family);
