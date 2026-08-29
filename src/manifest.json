@@ -69,7 +69,6 @@
     "pages/client/deployment.js",
     "pages/client/comparison.js",
     "pages/client/roadmap.js",
-    "pages/client/request-demo.js",
     "pages/dev/overview.js",
     "pages/dev/documents.js",
     "pages/dev/requirements.js",

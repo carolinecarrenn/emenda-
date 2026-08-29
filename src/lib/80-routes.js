@@ -6,8 +6,7 @@ const V16_ROUTES={
   'build-evidence':'buildEvidence',
   'deployment':'deployment',
   'comparison':'comparison',
-  'roadmap':'roadmap',
-  'request-demo':'requestDemo'
+  'roadmap':'roadmap'
 };
 PILLARS.forEach(p=>{ V16_ROUTES['pillar/'+p.slug]='pillar_'+p.slug; });
 INDUSTRIES.forEach(x=>{ V16_ROUTES['industry/'+x.slug]='industry_'+x.slug; });
@@ -18,7 +17,7 @@ Object.keys(V16_ROUTES).forEach(r=>{ PAGE_TO_ROUTE[V16_ROUTES[r]]=r; });
 /* nav family highlighting for the new pages */
 Object.assign(V16_NAV_FAMILY,{
   pillars:'product', buildEvidence:'resources', deployment:'platform',
-  comparison:'company', roadmap:'resources', requestDemo:'resources'
+  comparison:'company', roadmap:'resources'
 });
 PILLARS.forEach(p=>{ V16_NAV_FAMILY['pillar_'+p.slug]='product'; });
 INDUSTRIES.forEach(x=>{ V16_NAV_FAMILY['industry_'+x.slug]='industries'; });

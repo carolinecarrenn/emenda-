@@ -1151,7 +1151,6 @@ a.dev-card:hover { border-color: var(--emerald); transform: translateY(-2px); bo
         <button type="button" class="lang-btn" data-lang="ja" aria-label="日本語">日本語</button>
       </div>
       <a class="btn btn-ghost only-client" href="https://emenda.tech" target="_blank" rel="noopener">Live product ↗</a>
-      <a class="btn btn-p only-client" href="#/request-demo" data-nav>Request Demo</a>
       <a class="btn btn-s only-dev" href="https://www.figma.com/design/IZZYiAlNAdYAAcX2z5AtOm/full-emenda?t=9xQLU58yz168Rhp8-0" target="_blank" rel="noopener">Figma ↗</a>
       <a class="btn btn-p only-dev" href="https://emenda.tech" target="_blank" rel="noopener">Live app ↗</a>
     </div>
@@ -1190,7 +1189,7 @@ a.dev-card:hover { border-color: var(--emerald); transform: translateY(-2px); bo
     <div class="mgrp">Company</div>
     <a href="#/company" data-page="company">About</a><a href="#/business-model" data-nav>Business Model</a><a href="#/market-positioning" data-nav>Market & Positioning</a><a href="#/comparison" data-nav>Comparison</a>
     <div class="mgrp">More</div>
-    <a href="#/request-demo" data-nav>Request Demo</a><a href="https://emenda.tech" target="_blank" rel="noopener">Open Live Demo ↗</a>
+    <a href="https://emenda.tech" target="_blank" rel="noopener">Open Live Demo ↗</a>
   </div>
 
   <div class="mmode-dev">
@@ -1231,7 +1230,7 @@ a.dev-card:hover { border-color: var(--emerald); transform: translateY(-2px); bo
         <a href="#/build-evidence" data-nav>Build evidence</a><a href="#/resources" data-page="resources">Product Status</a><a href="#/roadmap" data-nav>Roadmap</a><a href="#/faq" data-nav>FAQ</a>
       </div>
       <div class="fcol"><h4>Company</h4>
-        <a href="#/company" data-page="company">About</a><a href="#/business-model" data-nav>Business Model</a><a href="#/market-positioning" data-nav>Market & Positioning</a><a href="#/comparison" data-nav>Comparison</a><a href="#/request-demo" data-nav>Request Demo</a><a href="https://emenda.tech" target="_blank" rel="noopener">Open Live Demo ↗</a>
+        <a href="#/company" data-page="company">About</a><a href="#/business-model" data-nav>Business Model</a><a href="#/market-positioning" data-nav>Market & Positioning</a><a href="#/comparison" data-nav>Comparison</a><a href="https://emenda.tech" target="_blank" rel="noopener">Open Live Demo ↗</a>
       </div>
     </div>
     <div class="footer-bottom">
@@ -2823,7 +2822,6 @@ PAGES.home=()=>`
   <h2 style="font-size:clamp(24px,3vw,34px)">${L('Start with the workflow that breaks first.','Mulai dari workflow yang paling dulu patah.','最初に壊れる業務から始める。')}</h2>
   <p>${L('Sixty minutes on the running product, a written fit-gap list, and a ninety-day pilot plan with the metric agreed in advance.','Enam puluh menit di produk yang berjalan, daftar fit-gap tertulis, dan rencana pilot sembilan puluh hari dengan metrik yang disepakati di depan.','稼働中の製品で60分、書面のフィットギャップ一覧、そして指標を事前合意した90日パイロット計画。')}</p>
   <div class="hero-cta">
-    <a class="btn btn-p btn-lg" href="#/request-demo" data-nav>${L('Request a demo','Minta demo','デモを依頼')}</a>
     <a class="btn btn-s btn-lg" href="#/roadmap" data-nav>${L('See the phase plan','Lihat rencana fase','フェーズ計画を見る')}</a>
   </div>
 </div></div></section>`;
@@ -3833,7 +3831,7 @@ PAGES.resources=()=>`
   <h2>${L('Use the right source depending on what you want to inspect.','Gunakan source yang tepat sesuai hal yang ingin dicek.','確認したい内容に応じて正しいソースへ。')}</h2>
   <div class="page-links">
     <a class="page-link-card" href="https://www.figma.com/design/IZZYiAlNAdYAAcX2z5AtOm/full-emenda?t=9xQLU58yz168Rhp8-0" target="_blank" rel="noopener">${ic('eye')}<b>Figma · Full Emenda</b><span>${L('Fixed Worker mobile screens, states, flows, and visual decisions.','Screen mobile Worker yang fixed, state, flow, dan keputusan visual.','確定Workerモバイル画面、状態、フロー、UI判断。')}</span></a>
-    <a class="page-link-card" href="https://emenda.tech" target="_blank" rel="noopener">${ic('bolt')}<b>emenda.tech</b><span>${L('Running demo destination. No request form required.','Tujuan demo yang berjalan. Tidak perlu form request demo.','動作デモ。申込フォーム不要。')}</span></a>
+    <a class="page-link-card" href="https://emenda.tech" target="_blank" rel="noopener">${ic('bolt')}<b>emenda.tech</b><span>${L('Running product destination. No form required.','Tujuan produk yang berjalan. Tanpa formulir tambahan.','稼働中の製品。フォームは不要。')}</span></a>
     <a class="page-link-card" href="#/architecture" data-nav>${ic('layers')}<b>${L('Architecture page','Halaman arsitektur','アーキテクチャページ')}</b><span>${L('Technology stack, application layers, backend/database/hosting, quality, and boundaries.','Technology stack, application layer, backend/database/hosting, quality, dan boundary.','技術スタック、アプリ層、BE/DB/hosting、品質、境界。')}</span></a>
   </div>
 </div></section>`;
@@ -4538,72 +4536,6 @@ PAGES.roadmap=()=>`
     <div class="card reveal"><span class="cn">03</span><h3>${L('The data does not exist yet','Datanya belum ada','データはまだ存在しない')}</h3><p>${L('Around 2.3 million foreign workers, and no primary record of what any of them actually did at work. Credit, housing and career decisions are all designed on top of that blank.','Sekitar 2,3 juta pekerja asing, dan tidak ada record primer tentang apa yang sebenarnya mereka lakukan di tempat kerja. Kredit, perumahan, dan keputusan karier semuanya dirancang di atas kekosongan itu.','外国人労働者は約230万人。しかし彼らが職場で実際に何をしたかの一次記録は存在しない。与信も住居もキャリアも、その空白の上に設計されている。')}</p></div>
   </div>
   <p class="source-note">${L('Figures and dates from the internal business plan and market documents in the project document library.','Angka dan tanggal dari rencana bisnis internal dan dokumen pasar di document library proyek.','数値と日付はプロジェクト文書ライブラリ内の社内事業計画および市場資料による。')}</p>
-</div></section>
-${detailedCTA()}`;
-
-/* ======== pages/client/request-demo.js ==================================== */
-/* request-demo  —  PAGES.requestDemo
-   Merged from 1 original layer (line 4361). */
-PAGES.requestDemo=()=>`
-<section class="phero"><div class="wrap">
-  <span class="eyebrow">${L('Request a demo','Minta demo','デモの依頼')}</span>
-  <h1>${L('Three steps from a first call to a pilot plan.','Tiga langkah dari panggilan pertama sampai rencana pilot.','初回の打合せからパイロット計画まで、3ステップ。')}</h1>
-  <p>${L('The running product is public at emenda.tech and the design file is open — so the demo is not a reveal. It is the conversation about which of your workflows breaks first, and whether the 90-day pilot is worth running at all.','Produk yang berjalan sudah publik di emenda.tech dan file desainnya terbuka — jadi demo ini bukan pengungkapan. Ini percakapan tentang workflow mana milik Anda yang paling dulu patah, dan apakah pilot 90 hari itu layak dijalankan sama sekali.','稼働中の製品はemenda.techで公開され、デザインファイルも開いている。したがってデモは種明かしではない。御社のどのワークフローが最初に壊れるか、そして90日パイロットを走らせる価値があるかを話す場である。')}</p>
-</div></section>
-
-<section class="sec"><div class="wrap">
-  <span class="eyebrow">${L('How it runs','Bagaimana jalannya','進め方')}</span>
-  <h2>${L('No slideware. The product is already open.','Tanpa slideware. Produknya sudah terbuka.','スライドは不要。製品は既に開いている。')}</h2>
-  <div class="steps">
-    ${[
-      ['1',L('Live walkthrough','Walkthrough langsung','ライブ・ウォークスルー'),
-        L('We open the running app and walk one complete loop — a worker submits a daily report, a manager verifies it, the worker sees the outcome. Then you drive it yourself.','Kami membuka aplikasi yang berjalan dan menelusuri satu loop lengkap — worker mengirim laporan harian, manager memverifikasi, worker melihat hasilnya. Lalu Anda yang mengoperasikannya.','稼働中のアプリを開き、完全な一巡を辿る——労働者が日報を提出し、管理者が検証し、労働者が結果を見る。その後は御社に操作していただく。'),
-        L('60 minutes','60 menit','60分')],
-      ['2',L('Fit-gap workshop','Workshop fit-gap','フィットギャップ検討'),
-        L('We map your actual workflow against the nine pillars and name the gaps out loud, including the ones that would need building. The output is a written list, not a verbal reassurance.','Kami memetakan workflow Anda yang sebenarnya terhadap sembilan pilar dan menyebut gap-nya terang-terangan, termasuk yang harus dibangun. Outputnya daftar tertulis, bukan jaminan lisan.','御社の実際の業務を9つの柱に突き合わせ、要開発のものも含めてギャップを明示する。成果物は口頭の安心ではなく、書かれた一覧である。'),
-        L('Half day','Setengah hari','半日')],
-      ['3',L('Proposal and pilot plan','Proposal dan rencana pilot','提案とパイロット計画'),
-        L('A ninety-day pilot with ten to thirty workers, the metric it will be judged on agreed in advance, and the condition under which we would tell you to stop.','Pilot sembilan puluh hari dengan sepuluh sampai tiga puluh worker, metrik penilaiannya disepakati di depan, dan kondisi di mana kami akan menyarankan Anda berhenti.','10〜30名・90日のパイロット。評価指標を事前に合意し、中止を進言する条件もあらかじめ定める。'),
-        L('Written within a week','Tertulis dalam seminggu','1週間以内に書面で')]
-    ].map(([n2,t,d,dur])=>`<div class="step reveal"><div class="sn">${n2}</div><h3>${t}</h3><p>${d}</p><div class="dur">${dur}</div></div>`).join('')}
-  </div>
-</div></section>
-
-<section class="sec tinted"><div class="wrap">
-  <span class="eyebrow">${L('Before you ask','Sebelum Anda bertanya','ご依頼の前に')}</span>
-  <h2>${L('What you should know going in.','Yang perlu Anda ketahui sejak awal.','事前にご承知おきいただきたいこと。')}</h2>
-  <ul class="plist">
-    <li><span class="pi">01</span><span><b>${L('This is a prototype, not a product you can buy today.','Ini prototype, bukan produk yang bisa dibeli hari ini.','これはプロトタイプであり、本日購入できる製品ではない。')}</b> ${L('There is no backend and no authentication. A pilot means building the server side against a design that is already fully specified — not configuring something that exists.','Belum ada backend dan belum ada authentication. Pilot berarti membangun sisi server di atas desain yang sudah sepenuhnya dispesifikasikan — bukan mengonfigurasi sesuatu yang sudah ada.','バックエンドも認証も存在しない。パイロットとは、既に完全に仕様化された設計に対してサーバー側を構築することであり、既存物の設定作業ではない。')}</span></li>
-    <li><span class="pi">02</span><span><b>${L('Stage 1 replaces LINE, paper and the telephone.','Stage 1 menggantikan LINE, kertas, dan telepon.','Stage 1はLINE・紙・電話を置き換える。')}</b> ${L('It does not integrate with an incumbent system, and it does not try to compete with the private messaging your team already uses.','Ia tidak berintegrasi dengan sistem incumbent, dan tidak mencoba bersaing dengan messaging privat yang sudah dipakai tim Anda.','既存システムとの統合は行わず、御社の私的な連絡手段と競合しようともしない。')}</span></li>
-    <li><span class="pi">03</span><span><b>${L('The worker owns the identity.','Worker memiliki identitasnya.','IDの主体は労働者本人である。')}</b> ${L('If that is not acceptable to your organization, the model will not fit, and it is better to establish that in the first hour than in the third month.','Kalau itu tidak bisa diterima organisasi Anda, modelnya tidak akan cocok, dan lebih baik memastikannya di jam pertama daripada di bulan ketiga.','それが御社にとって受け入れがたい場合、このモデルは適合しない。3か月目より最初の1時間で確認する方がよい。')}</span></li>
-    <li><span class="pi">04</span><span><b>${L('Pricing for the pilot is ¥5,000 per worker per month.','Harga pilot adalah ¥5.000 per worker per bulan.','パイロット価格は月額5,000円／人。')}</b> ${L('Billing is B2B only. Emenda does not monetise the individual — the worker’s side of the value is the coin, the portable record and the next job.','Penagihan hanya B2B. Emenda tidak memonetisasi individu — nilai di sisi worker adalah coin, record portabel, dan pekerjaan berikutnya.','課金はB2Bのみ。Emendaは個人からマネタイズしない。本人側の価値はコイン、持ち運べる記録、そして次の仕事である。')}</span></li>
-  </ul>
-</div></section>
-
-<section class="sec"><div class="wrap">
-  <span class="eyebrow">${L('Send a request','Kirim permintaan','依頼を送る')}</span>
-  <h2>${L('Tell us the workflow, not the feature list.','Ceritakan workflow-nya, bukan daftar fiturnya.','機能一覧ではなく、業務の流れをお聞かせください。')}</h2>
-  <form class="demo-form" id="demoForm">
-    <div class="field"><label>${L('Your name','Nama Anda','お名前')}</label><input type="text" name="name" required></div>
-    <div class="field"><label>${L('Organization','Organisasi','組織名')}</label><input type="text" name="org" required></div>
-    <div class="field"><label>${L('Email','Email','メールアドレス')}</label><input type="email" name="email" required></div>
-    <div class="field"><label>${L('Industry','Industri','業種')}</label>
-      <select name="industry">
-        <option>${L('Caregiving','Perawatan (Kaigo)','介護')}</option>
-        <option>${L('Construction & interior fit-out','Konstruksi & interior','建設・内装')}</option>
-        <option>${L('Manufacturing & food','Manufaktur & makanan','製造・食品')}</option>
-        <option>${L('Logistics & warehouse','Logistik & gudang','物流・倉庫')}</option>
-        <option>${L('Other','Lainnya','その他')}</option>
-      </select></div>
-    <div class="field"><label>${L('Foreign workers on site','Pekerja asing di lokasi','現場の外国人労働者数')}</label>
-      <select name="size"><option>1–10</option><option>11–30</option><option>31–100</option><option>100+</option></select></div>
-    <div class="field"><label>${L('Preferred language','Bahasa yang diinginkan','希望言語')}</label>
-      <select name="lang"><option>日本語</option><option>English</option><option>Bahasa Indonesia</option></select></div>
-    <div class="field full"><label>${L('Which part of the day breaks first?','Bagian mana dari hari kerja yang paling dulu patah?','一日のどの部分が最初に壊れますか')}</label>
-      <textarea name="problem" placeholder="${L('For example: shift handover notes written in Indonesian never reach the record.','Misalnya: catatan serah terima shift yang ditulis dalam Bahasa Indonesia tidak pernah sampai ke record.','例：インドネシア語で書かれた申し送りが記録に届かない。')}"></textarea></div>
-    <div class="full"><button type="submit" class="btn btn-p btn-lg">${L('Compose the request','Susun permintaannya','依頼文を作成')}</button></div>
-  </form>
-  <p class="form-note">${L('This site has no server. Submitting opens your own mail client with the request pre-filled, so you can see and edit exactly what is sent before it leaves your machine. Nothing is transmitted from this page.','Situs ini tidak punya server. Mengirim akan membuka mail client Anda sendiri dengan permintaan yang sudah terisi, sehingga Anda bisa melihat dan mengedit persis apa yang dikirim sebelum meninggalkan mesin Anda. Tidak ada yang dikirim dari halaman ini.','本サイトにサーバーはない。送信すると、依頼内容が下書きされた状態でご自身のメールクライアントが開く。端末を離れる前に、送られる内容をそのまま確認・編集できる。本ページからは何も送信されない。')}</p>
 </div></section>
 ${detailedCTA()}`;
 
@@ -6127,7 +6059,7 @@ const industryPage=(x)=>`
   <span class="eyebrow">${L('Industries','Industri','業種')} · ${x.n}</span>
   <h1>${x.name}</h1>
   <p>${x.lede}</p>
-  ${anchorBar([['#/industries',L('All industries','Semua industri','全業種')],['#/pillars',L('Product pillars','Pilar produk','製品の柱')],['#/request-demo',L('Request a demo','Minta demo','デモを依頼')]])}
+  ${anchorBar([['#/industries',L('All industries','Semua industri','全業種')],['#/pillars',L('Product pillars','Pilar produk','製品の柱')]])}
 </div></section>
 
 <section class="sec"><div class="wrap">
@@ -6185,8 +6117,7 @@ const V16_ROUTES={
   'build-evidence':'buildEvidence',
   'deployment':'deployment',
   'comparison':'comparison',
-  'roadmap':'roadmap',
-  'request-demo':'requestDemo'
+  'roadmap':'roadmap'
 };
 PILLARS.forEach(p=>{ V16_ROUTES['pillar/'+p.slug]='pillar_'+p.slug; });
 INDUSTRIES.forEach(x=>{ V16_ROUTES['industry/'+x.slug]='industry_'+x.slug; });
@@ -6197,7 +6128,7 @@ Object.keys(V16_ROUTES).forEach(r=>{ PAGE_TO_ROUTE[V16_ROUTES[r]]=r; });
 /* nav family highlighting for the new pages */
 Object.assign(V16_NAV_FAMILY,{
   pillars:'product', buildEvidence:'resources', deployment:'platform',
-  comparison:'company', roadmap:'resources', requestDemo:'resources'
+  comparison:'company', roadmap:'resources'
 });
 PILLARS.forEach(p=>{ V16_NAV_FAMILY['pillar_'+p.slug]='product'; });
 INDUSTRIES.forEach(x=>{ V16_NAV_FAMILY['industry_'+x.slug]='industries'; });
@@ -6273,28 +6204,6 @@ document.addEventListener('click',e=>{
     bar.querySelectorAll('.tabbtn').forEach(b=>b.classList.toggle('on',b===tb));
     scope.querySelectorAll('.tabpane').forEach(p=>p.classList.toggle('on',p.dataset.tab===tb.dataset.tab));
   }
-});
-
-document.addEventListener('submit',e=>{
-  const f=e.target.closest('#demoForm');
-  if(!f) return;
-  e.preventDefault();
-  const g=n=>{const el=f.elements[n];return el?String(el.value||'').trim():'';};
-  const lines=[
-    'Name: '+g('name'),
-    'Organization: '+g('org'),
-    'Email: '+g('email'),
-    'Industry: '+g('industry'),
-    'Foreign workers on site: '+g('size'),
-    'Preferred language: '+g('lang'),
-    '',
-    'Which part of the day breaks first:',
-    g('problem'),
-    '',
-    '— sent from the EMENDA product microsite'
-  ];
-  const subject='EMENDA demo request — '+(g('org')||'(organization)');
-  window.location.href='mailto:hello@emenda.tech?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(lines.join('\n'));
 });
 
 /* ======== lib/99-boot.js ================================================== */

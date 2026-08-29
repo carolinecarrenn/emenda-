@@ -54,7 +54,7 @@ const industryPage=(x)=>`
   <span class="eyebrow">${L('Industries','Industri','業種')} · ${x.n}</span>
   <h1>${x.name}</h1>
   <p>${x.lede}</p>
-  ${anchorBar([['#/industries',L('All industries','Semua industri','全業種')],['#/pillars',L('Product pillars','Pilar produk','製品の柱')],['#/request-demo',L('Request a demo','Minta demo','デモを依頼')]])}
+  ${anchorBar([['#/industries',L('All industries','Semua industri','全業種')],['#/pillars',L('Product pillars','Pilar produk','製品の柱')]])}
 </div></section>
 
 <section class="sec"><div class="wrap">

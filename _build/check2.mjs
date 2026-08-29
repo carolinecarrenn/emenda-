@@ -59,31 +59,10 @@ await page.locator('#home-industries .pillar-card').first().click();
 await page.waitForTimeout(120);
 console.log('home industry card ->', await route(page));
 
-// 4. demo form composes a mailto without navigating away
-await page.goto(`${file}#/request-demo`);
-await page.evaluate(() => window.dispatchEvent(new HashChangeEvent('hashchange')));
-await page.waitForTimeout(120);
-await page.fill('#demoForm input[name="name"]', 'Test User');
-await page.fill('#demoForm input[name="org"]', 'Sakura Care KK');
-await page.fill('#demoForm input[name="email"]', 'test@example.com');
-await page.fill('#demoForm textarea[name="problem"]', 'Shift handover notes never reach the record.');
-let mailto = null;
-page.on('request', r => { if (r.url().startsWith('mailto:')) mailto = r.url(); });
-await page.evaluate(() => {
-  window.__nav = null;
-  const d = Object.getOwnPropertyDescriptor(window.Location.prototype, 'href');
-  // capture instead of navigating
-  document.getElementById('demoForm').addEventListener('submit', () => {}, { capture: true });
-});
-await page.locator('#demoForm button[type="submit"]').click();
-await page.waitForTimeout(250);
-const stillOnPage = await page.evaluate(() => !!document.getElementById('demoForm'));
-console.log('demo form submitted, form still present:', stillOnPage);
-
-// 5. mobile viewport
+// 4. mobile viewport
 console.log('\nMOBILE 390px');
 const m = await browser.newPage({ viewport: { width: 390, height: 844 } });
-for (const r of ['home', 'pillars', 'pillar/consent-privacy', 'build-evidence', 'comparison', 'industry/caregiving', 'request-demo']) {
+for (const r of ['home', 'pillars', 'pillar/consent-privacy', 'build-evidence', 'comparison', 'industry/caregiving', 'roadmap']) {
   await m.goto(`${file}#/${r}`);
   await m.evaluate(() => window.dispatchEvent(new HashChangeEvent('hashchange')));
   await m.waitForTimeout(120);

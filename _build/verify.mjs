@@ -22,7 +22,7 @@ const ROUTES = [
   'industry/logistics',
   'platform', 'emenda-assistant', 'architecture', 'integration-data', 'security-privacy', 'deployment',
   'resources', 'build-evidence', 'roadmap', 'implementation', 'faq',
-  'company', 'business-model', 'market-positioning', 'comparison', 'request-demo',
+  'company', 'business-model', 'market-positioning', 'comparison',
 ];
 const LANGS = ['en', 'id', 'ja'];
 

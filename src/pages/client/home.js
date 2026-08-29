@@ -327,7 +327,6 @@ PAGES.home=()=>`
   <h2 style="font-size:clamp(24px,3vw,34px)">${L('Start with the workflow that breaks first.','Mulai dari workflow yang paling dulu patah.','最初に壊れる業務から始める。')}</h2>
   <p>${L('Sixty minutes on the running product, a written fit-gap list, and a ninety-day pilot plan with the metric agreed in advance.','Enam puluh menit di produk yang berjalan, daftar fit-gap tertulis, dan rencana pilot sembilan puluh hari dengan metrik yang disepakati di depan.','稼働中の製品で60分、書面のフィットギャップ一覧、そして指標を事前合意した90日パイロット計画。')}</p>
   <div class="hero-cta">
-    <a class="btn btn-p btn-lg" href="#/request-demo" data-nav>${L('Request a demo','Minta demo','デモを依頼')}</a>
     <a class="btn btn-s btn-lg" href="#/roadmap" data-nav>${L('See the phase plan','Lihat rencana fase','フェーズ計画を見る')}</a>
   </div>
 </div></div></section>`;

@@ -73,7 +73,7 @@ header menentukan navigasi mana yang tampil dan chrome apa yang dibawa halaman.
 | | Client | Dev |
 |---|---|---|
 | Navigasi | Product · Solutions · Platform · Industries · Resources · Company | Overview · Documents · Build · Portal |
-| Tombol header | Live product · Request Demo | Figma · Live app |
+| Tombol header | Live product | Figma · Live app |
 | Penanda | — | Strip `Internal` di bawah header |
 | Rute | `#/home`, `#/product`, … | `#/dev`, `#/dev/documents`, … |
 

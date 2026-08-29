@@ -13,7 +13,7 @@ const ROUTES = [
   'industries','industry/caregiving','industry/construction','industry/manufacturing-food','industry/logistics',
   'platform','emenda-assistant','architecture','integration-data','security-privacy','deployment',
   'resources','build-evidence','roadmap','implementation','faq',
-  'company','business-model','market-positioning','comparison','request-demo',
+  'company','business-model','market-positioning','comparison',
   'dev','dev/documents','dev/requirements','dev/frontend','dev/parity','dev/testing','dev/portal',
   'dev/doc/feature-catalog','dev/doc/mvp-requirements','dev/doc/ai-agent',
   'dev/doc/business','dev/doc/competition','dev/doc/data-platform'

@@ -74,7 +74,7 @@ PAGES.resources=()=>`
   <h2>${L('Use the right source depending on what you want to inspect.','Gunakan source yang tepat sesuai hal yang ingin dicek.','確認したい内容に応じて正しいソースへ。')}</h2>
   <div class="page-links">
     <a class="page-link-card" href="https://www.figma.com/design/IZZYiAlNAdYAAcX2z5AtOm/full-emenda?t=9xQLU58yz168Rhp8-0" target="_blank" rel="noopener">${ic('eye')}<b>Figma · Full Emenda</b><span>${L('Fixed Worker mobile screens, states, flows, and visual decisions.','Screen mobile Worker yang fixed, state, flow, dan keputusan visual.','確定Workerモバイル画面、状態、フロー、UI判断。')}</span></a>
-    <a class="page-link-card" href="https://emenda.tech" target="_blank" rel="noopener">${ic('bolt')}<b>emenda.tech</b><span>${L('Running demo destination. No request form required.','Tujuan demo yang berjalan. Tidak perlu form request demo.','動作デモ。申込フォーム不要。')}</span></a>
+    <a class="page-link-card" href="https://emenda.tech" target="_blank" rel="noopener">${ic('bolt')}<b>emenda.tech</b><span>${L('Running product destination. No form required.','Tujuan produk yang berjalan. Tanpa formulir tambahan.','稼働中の製品。フォームは不要。')}</span></a>
     <a class="page-link-card" href="#/architecture" data-nav>${ic('layers')}<b>${L('Architecture page','Halaman arsitektur','アーキテクチャページ')}</b><span>${L('Technology stack, application layers, backend/database/hosting, quality, and boundaries.','Technology stack, application layer, backend/database/hosting, quality, dan boundary.','技術スタック、アプリ層、BE/DB/hosting、品質、境界。')}</span></a>
   </div>
 </div></section>`;

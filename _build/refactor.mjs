@@ -131,7 +131,6 @@ const PAGES = [
   ['deployment',           'deployment',          [4027]],
   ['comparison',           'comparison',          [4102]],
   ['roadmap',              'roadmap',             [4306]],
-  ['requestDemo',          'request-demo',        [4361]],
 ];
 
 const pageFiles = [];
