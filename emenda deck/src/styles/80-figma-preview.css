@@ -1,0 +1,19 @@
+/* ============ V9 · real Figma product previews ============ */
+.figma-hero-preview{display:flex;gap:22px;align-items:center;justify-content:center;min-height:430px}
+.figma-phone-card{background:var(--card);border:1px solid var(--line);border-radius:28px;padding:11px;box-shadow:0 22px 55px #082e221f;position:relative}
+.figma-phone-card img{display:block;width:155px;max-width:100%;border-radius:18px;background:#f7f9f6;image-rendering:auto}
+.figma-phone-card.hero-main img{width:190px}
+.figma-phone-card.hero-main{transform:translateY(-4px)}
+.figma-phone-card .fp-label{display:flex;justify-content:space-between;gap:8px;align-items:center;margin-top:10px;padding:0 4px 2px;font-size:10px;color:var(--ink-soft)}
+.figma-phone-card .fp-label b{color:var(--ink);font-size:10.5px}
+.figma-source-pill{position:absolute;top:17px;right:17px;background:#083d2de8;color:#fff;border-radius:999px;padding:6px 9px;font:700 8px var(--mono);letter-spacing:.04em;backdrop-filter:blur(8px)}
+.figma-preview-section{overflow:hidden}
+.figma-preview-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;align-items:start;margin-top:34px}
+.figma-preview-item{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:20px;min-width:0}
+.figma-preview-item .screen-wrap{display:flex;justify-content:center;min-height:300px;align-items:center;background:linear-gradient(145deg,var(--paper2),#eef6f2);border-radius:16px;padding:20px;margin-bottom:18px}
+.figma-preview-item img{width:132px;max-width:100%;border-radius:12px;box-shadow:0 12px 28px #082e221a}
+.figma-preview-item h3{font-size:17px;margin-bottom:6px}
+.figma-preview-item p{font-size:12.5px;line-height:1.6;color:var(--ink-soft)}
+.figma-preview-item .figma-link{display:inline-flex;margin-top:12px;color:var(--emerald);font-size:11px;font-weight:700}
+@media(max-width:860px){.figma-hero-preview{min-height:auto;padding-top:18px}.figma-phone-card.hero-main img{width:165px}.figma-phone-card.secondary{display:none}.figma-preview-grid{grid-template-columns:1fr 1fr}.figma-preview-grid .figma-preview-item:last-child{grid-column:1/-1}}
+@media(max-width:560px){.figma-preview-grid{grid-template-columns:1fr}.figma-preview-grid .figma-preview-item:last-child{grid-column:auto}.figma-preview-item .screen-wrap{min-height:260px}.figma-preview-item img{width:120px}}

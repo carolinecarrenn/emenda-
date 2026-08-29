@@ -1,0 +1,11 @@
+/* V11: show Figma screens directly — no blur, overlay, gradient, or presentation card. */
+.figma-hero-preview{gap:24px;min-height:0;align-items:flex-start}
+.figma-phone-card,.figma-phone-card.hero-main{background:transparent!important;border:0!important;border-radius:0!important;padding:0!important;box-shadow:none!important;transform:none!important}
+.figma-phone-card img,.figma-phone-card.hero-main img{width:180px;max-width:100%;height:auto;border-radius:0!important;background:transparent!important;box-shadow:none!important;filter:none!important;backdrop-filter:none!important;opacity:1!important;image-rendering:auto}
+.figma-phone-card .fp-label,.figma-source-pill{display:none!important}
+.figma-preview-item{background:transparent!important;border:0!important;border-radius:0!important;padding:0!important}
+.figma-preview-item .screen-wrap{min-height:0!important;background:transparent!important;border-radius:0!important;padding:0!important;margin-bottom:14px!important;overflow:visible!important}
+.figma-preview-item img{width:180px;max-width:100%;height:auto;border-radius:0!important;box-shadow:none!important;filter:none!important;backdrop-filter:none!important;opacity:1!important}
+.figma-preview-item h3,.figma-preview-item p,.figma-preview-item .figma-link{display:none!important}
+@media(max-width:860px){.figma-phone-card.hero-main img,.figma-phone-card img,.figma-preview-item img{width:165px}}
+@media(max-width:560px){.figma-phone-card.hero-main img,.figma-phone-card img,.figma-preview-item img{width:150px}}

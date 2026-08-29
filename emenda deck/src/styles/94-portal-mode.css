@@ -1,0 +1,104 @@
+/* ============ PORTAL MODE — client vs dev ============ */
+
+/* Only one navigation is mounted at a time; both live in the shell so switching
+   costs nothing and never depends on a re-render. */
+.nav-dev, .mmode-dev { display: none; }
+body.mode-dev .nav-client, body.mode-dev .mmode-client { display: none; }
+body.mode-dev .mmode-dev { display: block; }
+
+/* Guarded by the same breakpoint that hides .nav-menu, because this selector is
+   more specific than the media-query rule and would otherwise keep the desktop
+   nav on screen next to the burger. */
+@media (min-width: 1101px) {
+  body.mode-dev .nav-dev { display: flex; }
+}
+
+/* Small per-mode swaps inside shared chrome (header buttons, footer columns). */
+.only-dev { display: none; }
+body.mode-dev .only-dev { display: inline-flex; }
+body.mode-dev .only-client { display: none; }
+
+.mode-switcher {
+  display: flex; align-items: center; gap: 2px; flex: none;
+  padding: 3px; border-radius: 9px;
+  background: var(--paper2); border: 1px solid var(--line);
+}
+.mode-btn {
+  font: 600 11px var(--mono); letter-spacing: .04em; text-transform: uppercase;
+  color: var(--ink-faint); padding: 5px 9px; border-radius: 6px; transition: .15s;
+  background: transparent; white-space: nowrap;
+}
+.mode-btn:hover { color: var(--emerald-deep); }
+.mode-btn.active { background: var(--card); color: var(--emerald-deep); box-shadow: var(--shadow-sm); }
+body.mode-dev .mode-btn.active { background: var(--emerald-deep); color: #fff; }
+
+.mobile-mode-switcher { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 6px 0 14px; }
+.mobile-mode-switcher .mode-btn {
+  padding: 11px 8px; border: 1px solid var(--line); background: var(--card); font-size: 12px;
+}
+.mobile-mode-switcher .mode-btn.active { background: var(--emerald); border-color: var(--emerald); color: #fff; }
+
+/* Dev chrome — a standing reminder that these pages are internal, so a screen
+   share never leaves it ambiguous which audience is looking. */
+.internal-strip { display: none; }
+body.mode-dev .internal-strip {
+  display: block; position: sticky; top: var(--nav-h); z-index: 90;
+  background: var(--emerald-dark); color: #BFE3D4;
+  font: 600 10.5px var(--mono); letter-spacing: .14em; text-transform: uppercase;
+  padding: 6px 28px; text-align: center;
+}
+
+/* ---- dev page furniture ---- */
+.dev-meta {
+  display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px;
+}
+.dev-meta span {
+  font: 500 11px var(--mono); color: var(--ink-soft);
+  background: var(--paper2); border: 1px solid var(--line);
+  padding: 5px 10px; border-radius: 7px;
+}
+
+.dev-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-top: 30px; }
+.dev-card {
+  display: block; padding: 20px 22px; border: 1px solid var(--line);
+  border-radius: 14px; background: var(--card); box-shadow: var(--shadow-sm); transition: .15s;
+}
+a.dev-card:hover { border-color: var(--emerald); transform: translateY(-2px); box-shadow: var(--shadow-md); }
+.dev-card .code {
+  font: 600 10px var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--amber);
+}
+.dev-card h3 {
+  font-family: var(--display); font-size: 17px; font-weight: 700;
+  color: var(--emerald-deep); letter-spacing: -.015em; margin-top: 7px;
+}
+.dev-card p { font-size: 13px; line-height: 1.6; color: var(--ink-soft); margin-top: 6px; }
+.dev-card .path { display: block; font: 500 11px var(--mono); color: var(--ink-faint); margin-top: 10px; word-break: break-all; }
+
+/* ---- file / document tables ---- */
+.dev-table { width: 100%; margin-top: 26px; border-collapse: collapse; font-size: 13px; }
+.dev-table th {
+  text-align: left; font: 600 10px var(--mono); letter-spacing: .1em; text-transform: uppercase;
+  color: var(--ink-faint); padding: 0 14px 10px 0; border-bottom: 1px solid var(--line);
+}
+.dev-table td { padding: 12px 14px 12px 0; border-bottom: 1px solid var(--line-soft); vertical-align: top; color: var(--ink-soft); line-height: 1.55; }
+.dev-table td:first-child { color: var(--ink); font-weight: 600; }
+.dev-table code, .dev-table .mono { font: 500 11.5px var(--mono); color: var(--emerald-deep); word-break: break-all; }
+.dev-scroll { overflow-x: auto; }
+
+.tag { display: inline-block; font: 600 10px var(--mono); letter-spacing: .06em; padding: 3px 7px; border-radius: 5px; white-space: nowrap; }
+.tag.ok { background: var(--emerald-tint); color: var(--emerald-deep); }
+.tag.warn { background: var(--amber-tint); color: #8A5A11; }
+.tag.info { background: var(--blue-tint); color: var(--blue); }
+.tag.stop { background: var(--consult-tint); color: var(--consult); }
+
+/* ---- terminal-ish command block ---- */
+.cmd {
+  margin-top: 18px; background: var(--emerald-dark); color: #CFE9DD;
+  border-radius: 12px; padding: 16px 18px; font: 500 12.5px var(--mono);
+  line-height: 1.75; overflow-x: auto;
+}
+.cmd .c { color: #7FBCA5; }
+.cmd b { color: #F0B45F; font-weight: 600; }
+
+@media (max-width: 900px) { .dev-grid { grid-template-columns: 1fr; } }
+@media (max-width: 720px) { body.mode-dev .internal-strip { padding: 6px 16px; font-size: 9.5px; } }

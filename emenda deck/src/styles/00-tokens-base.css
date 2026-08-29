@@ -1,0 +1,23 @@
+:root{
+  --emerald:#0C5941; --emerald-deep:#083D2D; --emerald-dark:#052A20; --emerald-mid:#11785A; --emerald-tint:#E3EFE8;
+  --amber:#E8A13D; --amber-tint:#FBF0DE; --amber-bright:#F0B45F;
+  --consult:#C94F3D; --consult-tint:#FAEBE8;
+  --blue:#2F6FB0; --blue-tint:#E7F0F8;
+  --ink:#12211F; --ink-soft:#46605A; --ink-faint:#8496A0;
+  --paper:#F7F9F6; --paper2:#EEF3EF; --paper3:#E6ECE7; --card:#FFFFFF; --line:#E4E7E0; --line-soft:#EEF0EB;
+  --display:'Sora','Inter',system-ui,sans-serif; --body:'Inter',system-ui,sans-serif; --jp:'Noto Sans JP',sans-serif; --mono:'IBM Plex Mono',ui-monospace,monospace;
+  --nav-h:64px; --maxw:1180px;
+  --shadow-sm:0 1px 3px rgba(18,33,31,.06),0 1px 2px rgba(18,33,31,.04);
+  --shadow-md:0 8px 30px rgba(18,33,31,.08);
+  --shadow-lg:0 24px 60px rgba(18,33,31,.14);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);background:var(--paper);color:var(--ink);-webkit-font-smoothing:antialiased;line-height:1.6}
+[lang=ja]{font-family:var(--jp)}
+.mono{font-family:var(--mono)}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none}
+img{max-width:100%;display:block}
+:focus-visible{outline:2px solid var(--amber);outline-offset:3px;border-radius:3px}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}

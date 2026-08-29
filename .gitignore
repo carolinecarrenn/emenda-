@@ -32,4 +32,18 @@ playwright/.cache/
 
 # A separate clone of the team backend repo (AlvinEmenda/Emenda_tech) lives
 # here; it has its own .git and must never be committed into this one.
-"emenda front-end"/
+# NOTE: it had been committed as a gitlink before this rule could take effect —
+# .gitignore does not apply to paths already in the index — so it was removed
+# with `git rm --cached` as well.
+# The pattern must NOT be quoted: gitignore treats quotes literally, so the
+# previous `"emenda front-end"/` looked for a directory whose name contained
+# quote characters and therefore matched nothing. Spaces need no escaping.
+emenda front-end/
+
+# Source document library — the 20 originals EMENDA was agreed from (~16 MB).
+# Kept out of git on purpose: it carries documents with binding distribution
+# markings (a CONFIDENTIAL business plan, a 社内限り competitor analysis that
+# forbids naming its partnership candidate externally, and a briefing addressed
+# to a named individual). The portal digests them at #/dev/documents; the
+# originals stay local.
+docs/doc/

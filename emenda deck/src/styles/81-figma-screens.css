@@ -1,0 +1,113 @@
+/* ============ V12 · crisp native Figma screenshots ============ */
+.figma-hero-preview{
+  min-height:0!important;
+  display:flex!important;
+  align-items:flex-start!important;
+  justify-content:center!important;
+  padding:0!important;
+  background:transparent!important;
+  filter:none!important;
+  backdrop-filter:none!important;
+}
+.figma-phone-card,
+.figma-phone-card.hero-main,
+.figma-phone-card.secondary{
+  display:block!important;
+  width:auto!important;
+  max-width:100%!important;
+  padding:0!important;
+  margin:0!important;
+  border:0!important;
+  border-radius:0!important;
+  background:transparent!important;
+  box-shadow:none!important;
+  transform:none!important;
+  filter:none!important;
+  backdrop-filter:none!important;
+  overflow:visible!important;
+}
+.figma-phone-card img,
+.figma-phone-card.hero-main img,
+.figma-preview-item img{
+  display:block!important;
+  width:auto!important;
+  height:auto!important;
+  max-width:390px!important;
+  max-height:none!important;
+  margin:0 auto!important;
+  border:0!important;
+  border-radius:0!important;
+  box-shadow:none!important;
+  background:transparent!important;
+  opacity:1!important;
+  filter:none!important;
+  backdrop-filter:none!important;
+  transform:none!important;
+  image-rendering:auto!important;
+}
+.hero-visual .figma-phone-card img{
+  width:min(100%,340px)!important;
+  max-width:340px!important;
+}
+.figma-source-pill,
+.figma-phone-card .fp-label{
+  display:none!important;
+}
+.figma-preview-grid{
+  display:grid!important;
+  grid-template-columns:repeat(3,minmax(0,1fr))!important;
+  gap:28px!important;
+  align-items:start!important;
+}
+.figma-preview-item{
+  padding:0!important;
+  border:0!important;
+  border-radius:0!important;
+  background:transparent!important;
+  box-shadow:none!important;
+  filter:none!important;
+  backdrop-filter:none!important;
+}
+.figma-preview-item .screen-wrap{
+  min-height:0!important;
+  padding:0!important;
+  margin:0 0 18px!important;
+  border:0!important;
+  border-radius:0!important;
+  background:transparent!important;
+  box-shadow:none!important;
+  filter:none!important;
+  backdrop-filter:none!important;
+  display:flex!important;
+  justify-content:center!important;
+  align-items:flex-start!important;
+}
+.figma-preview-item .screen-wrap img{
+  width:min(100%,320px)!important;
+  max-width:320px!important;
+}
+.figma-preview-item h3,
+.figma-preview-item p,
+.figma-preview-item .figma-link{
+  text-align:left!important;
+}
+@media(max-width:900px){
+  .figma-preview-grid{grid-template-columns:1fr 1fr!important}
+  .figma-preview-grid .figma-preview-item:last-child{grid-column:1/-1}
+}
+@media(max-width:600px){
+  .figma-preview-grid{grid-template-columns:1fr!important}
+  .figma-preview-grid .figma-preview-item:last-child{grid-column:auto}
+  .figma-preview-item .screen-wrap img{width:min(100%,340px)!important;max-width:340px!important}
+  .hero-visual .figma-phone-card img{width:min(100%,320px)!important;max-width:320px!important}
+}
+
+
+/* V13 · language switch reliability */
+.lang-switcher .lang-btn{cursor:pointer!important;user-select:none!important}
+.lang-switcher .lang-btn.active{
+  background:var(--emerald)!important;
+  color:#fff!important;
+  padding-left:7px!important;
+  padding-right:7px!important;
+}

@@ -1,0 +1,68 @@
+/* modules  —  PAGES.modulesDetail
+   Merged from 3 original layers (lines 1618, 2152, 2859). */
+PAGES.modulesDetail=()=>`
+<section class="phero"><div class="wrap">
+  <span class="eyebrow">Product / Modules</span>
+  <h1>Nine connected pillars, designed as one system.</h1>
+  <p>Each Emenda module solves a specific part of the journey, but none of them are intended to live in isolation. The product becomes stronger because identity, communication, reporting, follow-up, and governance are connected.</p>
+</div></section>
+
+<section class="sec"><div class="wrap">
+  <span class="eyebrow">Module catalog</span>
+  <h2>The full connected module map.</h2>
+  <div class="grid g3" style="margin-top:34px">
+    ${[['01','Identity','user','EMENDA ID, personal profile, portable identity foundation, and worker-owned continuity.'],['02','Work & Career','route','Employment connection, career profile, CV, skill history, and readiness tracking.'],['03','Daily Operations','clip','Daily reports, activity capture, routine logging, and structured field input.'],['04','Reports & Follow-up','report','Case intake, owner assignment, status management, and progress visibility.'],['05','Communication','chat','Cross-language messaging with original content preserved as the source of truth.'],['06','Support & Knowledge','book','Guidebooks, operational references, self-service help, and contextual information retrieval.'],['07','AI Assistance','bolt','One Emenda Assistant for discover, understand, act, and follow-up.'],['08','Organization Management','building','User administration, role control, content setup, and operational governance.'],['09','Evidence & History','shield','Closure records, document trail, timestamps, auditability, and future reference.']].map(([n,t,i,p])=>`<div class="card reveal">${ic(i)}<span class="cn">${n}</span><h3>${t}</h3><p>${p}</p></div>`).join('')}
+  </div>
+</div></section>
+
+<section class="sec tinted"><div class="wrap">
+  <span class="eyebrow">Grouped by journey</span>
+  <h2>Modules combine into larger role-based experiences.</h2>
+  <div class="grid g3" style="margin-top:30px">
+    <div class="card reveal"><h3>Worker journey</h3><p>Identity, Work & Career, Daily Operations, Communication, Support & Knowledge, and AI Assistance combine to form a calm mobile-first worker experience.</p><div class="pills"><span class="pill">Onboarding</span><span class="pill">EMENDA ID</span><span class="pill">Daily report</span><span class="pill">Knowledge</span><span class="pill">Assistant</span></div></div>
+    <div class="card reveal"><h3>Manager & organization journey</h3><p>Reports & Follow-up, Communication, Organization Management, and Evidence & History support oversight, coordination, and operational discipline.</p><div class="pills"><span class="pill">Dashboard</span><span class="pill">Report review</span><span class="pill">Verification</span><span class="pill">Audit trail</span></div></div>
+    <div class="card reveal"><h3>Cross-cutting foundation</h3><p>Multilingual support, permission-aware AI actions, and privacy boundaries are shared rules across all modules rather than separate screens.</p><div class="pills"><span class="pill">3 languages</span><span class="pill">Consent</span><span class="pill">Role-based access</span><span class="pill">Worker-owned history</span></div></div>
+  </div>
+</div></section>
+
+<section class="sec"><div class="wrap">
+  <span class="eyebrow">What is fixed vs expandable</span>
+  <h2>The operating model stays stable, while industry context can adapt.</h2>
+  <div class="grid g2" style="margin-top:30px">
+    <div class="card reveal"><h3>Stable product foundation</h3><ul class="rlist" style="margin-top:14px">${['Worker-owned identity and portable history','Original + translation content integrity','Report → follow-up → outcome lifecycle','Role-based access and privacy boundaries','One Emenda Assistant across surfaces'].map(x=>`<li><span class="ck">✓</span>${x}</li>`).join('')}</ul></div>
+    <div class="card reveal"><h3>Configurable by use case</h3><ul class="rlist" style="margin-top:14px">${['Daily report templates by industry','Knowledge content and operational procedures','Organization-specific permissions and governance','Implementation sequence and integration depth','Future role-specific modules beyond MVP'].map(x=>`<li><span class="ck">✓</span>${x}</li>`).join('')}</ul></div>
+  </div>
+</div></section>
+<section class="sec tinted"><div class="wrap">
+  <span class="eyebrow">${L('Role × module matrix','Matriks role × module','役割×モジュール')}</span>
+  <h2>${L('The same modules expose different responsibilities by role.','Modul yang sama membuka tanggung jawab berbeda sesuai role.','同じモジュールでも役割ごとに責任が異なります。')}</h2>
+  <div class="cap-table-wrap"><table class="cap-table"><thead><tr><th>${L('Module','Modul','モジュール')}</th><th>Worker</th><th>Manager</th><th>Organization / Admin</th></tr></thead><tbody>
+    <tr><td>Identity</td><td>${L('Own profile, verify identity, share permitted fields.','Memiliki profile, verify identity, share field yang diizinkan.','プロフィール保有、本人確認、許可項目共有。')}</td><td>${L('See permitted worker context.','Melihat context worker yang diizinkan.','許可された労働者情報を閲覧。')}</td><td>${L('Define policy and access boundaries.','Menentukan policy dan batas akses.','ポリシー・アクセス境界を設定。')}</td></tr>
+    <tr><td>Work & Career</td><td>${L('Career, skills, readiness, employment relation.','Career, skill, readiness, employment relation.','職歴・スキル・準備・雇用関係。')}</td><td>${L('Use work-relevant profile context.','Menggunakan context profile yang relevan untuk pekerjaan.','業務に必要なプロフィール文脈。')}</td><td>${L('Configure employer connection and visibility.','Konfigurasi employer connection dan visibility.','雇用接続・可視性設定。')}</td></tr>
+    <tr><td>Daily Operations</td><td>${L('Create report and retain draft/review state.','Membuat report serta mempertahankan draft/review state.','日報作成、下書き・確認状態保持。')}</td><td>${L('Review and verify.','Review dan verify.','確認・承認。')}</td><td>${L('Configure templates by operation.','Konfigurasi template per operasi.','業務別テンプレート設定。')}</td></tr>
+    <tr><td>Communication</td><td>${L('Send/receive with multilingual support.','Kirim/terima dengan dukungan multilingual.','多言語で送受信。')}</td><td>${L('Clarify in the same context.','Klarifikasi dalam context yang sama.','同じ文脈で確認。')}</td><td>${L('Govern retention and access.','Mengatur retention dan access.','保持・アクセス管理。')}</td></tr>
+    <tr><td>AI Assistance</td><td>${L('Ask, understand, plan, act with permission.','Bertanya, memahami, membuat plan, act dengan permission.','質問・理解・計画・同意付き実行。')}</td><td>${L('Use contextual assistance within role limits.','Menggunakan assistance kontekstual dalam batas role.','権限内で文脈支援。')}</td><td>${L('Control knowledge and capability boundaries.','Mengontrol knowledge dan capability boundary.','ナレッジ・機能境界管理。')}</td></tr>
+    <tr><td>Evidence & History</td><td>${L('See personal and permitted outcome history.','Melihat personal dan outcome history yang diizinkan.','本人・許可範囲の成果履歴。')}</td><td>${L('See operational decision trail.','Melihat decision trail operasional.','運用判断履歴。')}</td><td>${L('Audit and governance view.','Audit dan governance view.','監査・ガバナンス。')}</td></tr>
+  </tbody></table></div>
+</div></section>
+
+<section class="sec"><div class="wrap">
+  <span class="eyebrow">${L('Cross-module dependencies','Dependency lintas modul','モジュール間依存')}</span>
+  <h2>${L('Modules are intentionally connected instead of acting like isolated mini-apps.','Modul sengaja saling terhubung, bukan mini-app yang berdiri sendiri.','各モジュールは孤立せず意図的に接続されています。')}</h2>
+  <div class="deep-grid">
+    <div class="deep-card wide"><div class="num">IDENTITY → EVERYTHING</div><h3>${L('Identity provides continuity','Identity memberi kontinuitas','IDが継続性を作る')}</h3><p>${L('Reports, career, employment connection, permissions, and history all need a durable worker subject.','Report, career, employment connection, permission, dan history membutuhkan worker subject yang durable.','報告・キャリア・雇用接続・権限・履歴は継続する労働者IDを基準にします。')}</p></div>
+    <div class="deep-card wide"><div class="num">COMMUNICATION → FOLLOW-UP</div><h3>${L('Conversation stays attached to action','Percakapan tetap terhubung ke action','会話を対応に接続')}</h3><p>${L('Clarification should not move to an untracked side channel when it affects an operational case.','Klarifikasi tidak seharusnya pindah ke side channel yang tidak terlacak ketika memengaruhi operational case.','業務ケースに関わる確認を追跡できない別チャネルへ逃がしません。')}</p></div>
+    <div class="deep-card wide"><div class="num">KNOWLEDGE → ASSISTANT</div><h3>${L('Knowledge grounds assistance','Knowledge menjadi grounding assistance','ナレッジが支援を根拠づける')}</h3><p>${L('The assistant should use relevant sources and freshness instead of generating disconnected generic advice.','Assistant harus memakai source yang relevan dan freshness, bukan generic advice yang terpisah dari context.','関連ソースと更新性を使い、一般論だけで回答しない設計です。')}</p></div>
+    <div class="deep-card wide"><div class="num">OUTCOME → HISTORY</div><h3>${L('Completion becomes reusable evidence','Completion menjadi evidence yang dapat digunakan lagi','完了を再利用可能な証跡に')}</h3><p>${L('Resolved/failed/still-working outcomes create learning and audit data rather than disappearing after the action.','Outcome resolved/failed/still-working menjadi data learning dan audit, bukan hilang setelah action.','解決・失敗・継続中の結果を学習・監査データとして残します。')}</p></div>
+  </div>
+</div></section>
+<section class="sec" id="module-outputs"><div class="wrap">
+  <span class="eyebrow">${L('What each module contributes','Kontribusi tiap modul','各moduleの出力')}</span><h2>${L('The value is in what each module adds to the shared operating record.','Value ada pada kontribusi tiap modul ke shared operating record.','各moduleがshared operating recordへ何を追加するかが価値。')}</h2>
+  <div class="spec-table-wrap"><table class="spec-table"><thead><tr><th>${L('Module family','Keluarga modul','Module family')}</th><th>${L('Primary data/output','Data/output utama','Primary data/output')}</th><th>${L('Consumed by','Dipakai oleh','利用先')}</th><th>${L('Boundary','Boundary','Boundary')}</th></tr></thead><tbody>
+    <tr><td>Identity & Access</td><td>${L('Worker ID, account state, language, organization relationship, verification status.','Worker ID, account state, bahasa, organization relationship, verification status.','Worker ID、account state、言語、organization relationship、verification status。')}</td><td>${L('All role-aware modules.','Semua modul role-aware.','全role-aware module。')}</td><td>${L('Identity persists beyond employment.','Identity bertahan di luar employment.','Identityはemploymentを超えて継続。')}</td></tr>
+    <tr><td>Communication & Translation</td><td>${L('Original message, translation, intent/context, receipts, thread history.','Original message, translation, intent/context, receipt, thread history.','原文、translation、intent/context、receipt、thread history。')}</td><td>${L('Follow-up, work records, Assistant, audit.','Follow-up, work record, Assistant, audit.','follow-up、work record、Assistant、audit。')}</td><td>${L('Original remains source of truth.','Original tetap source of truth.','原文がsource of truth。')}</td></tr>
+    <tr><td>Work Records</td><td>${L('Structured daily activity, free text, template fields, submission/verification state.','Structured daily activity, free text, template field, submission/verification state.','structured daily activity、free text、template field、submission/verification state。')}</td><td>${L('Manager review, timeline, analytics.','Manager review, timeline, analytics.','manager review、timeline、analytics。')}</td><td>${L('Industry template is configurable.','Industry template configurable.','industry templateはconfigurable。')}</td></tr>
+    <tr><td>Consent & Privacy</td><td>${L('Disclosure, consent decision, visibility scope, re-consent history.','Disclosure, consent decision, visibility scope, re-consent history.','disclosure、consent、visibility scope、re-consent history。')}</td><td>${L('Data access and sensitive actions.','Data access dan sensitive action.','data access・sensitive action。')}</td><td>${L('No implied consent from employment.','Tidak ada implied consent dari employment.','employmentによるimplied consentなし。')}</td></tr>
+    <tr><td>Measurement</td><td>${L('Reliable events and operational metrics tied to decisions.','Reliable event dan operational metric yang terkait decision.','reliable event・decisionに結びつくmetric。')}</td><td>${L('Pilot evaluation and manager/executive views.','Pilot evaluation dan manager/executive view.','pilot evaluation・manager/executive view。')}</td><td>${L('No metric without owner/action/source.','Tidak ada metric tanpa owner/action/source.','owner/action/sourceなしのmetricは出さない。')}</td></tr>
+  </tbody></table></div>
+</div></section>`;
