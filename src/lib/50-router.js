@@ -142,7 +142,7 @@ function attachPageBehaviors(page){
   // ecosystem diagram (home)
   const eco=document.getElementById('ecoHome');
   if(eco){
-    const sats=[['Worker','Clarity & support'],['Manager','Visibility & decisions'],['Employer','Control & evidence'],['Organization','Governance'],['Knowledge','Operational data'],['AI Assistance','Context & action']];
+    const sats=[['Worker','Clarity & support'],['Manager','Visibility & decisions'],['Company Admin','Operational control & evidence'],['Super Admin','Platform governance'],['Knowledge','Operational data'],['AI Assistance','Context & action']];
     const R=40;
     const pts=sats.map((s,i)=>{const a=(-90+i*60)*Math.PI/180;return{x:50+R*Math.cos(a),y:50+R*Math.sin(a)};});
     eco.innerHTML=`<svg class="lines" viewBox="0 0 100 100" preserveAspectRatio="none">${pts.map(p=>`<line x1="50" y1="50" x2="${p.x}" y2="${p.y}"/>`).join('')}</svg>

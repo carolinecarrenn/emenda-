@@ -13,7 +13,7 @@ PAGES.home=()=>`
       </div>
       <div class="hero-trust">
         <div class="ti"><b>3 languages</b>Bahasa Indonesia · English · 日本語</div>
-        <div class="ti"><b>4 roles</b>Worker · Manager · Employer · Admin</div>
+        <div class="ti"><b>4 roles</b>Worker · Manager · Company Admin · Super Admin</div>
         <div class="ti"><b>1 journey</b>Identity → work → support → outcome</div>
       </div>
     </div>
@@ -125,8 +125,8 @@ PAGES.home=()=>`
     ${[
       ['Worker','user','Clarity, support & a companion for work and daily life.','#/for-workers'],
       ['Manager','users','Visibility, structured follow-up & decision support.','#/for-managers'],
-      ['Employer','building','Operational control, communication & evidence.','#/for-organizations'],
-      ['Admin','gear','Governance, configuration & oversight.','#/for-organizations']
+      ['Company Admin','building','Operational control, membership & company governance.','#/for-organizations'],
+      ['Super Admin','gear','Platform governance, configuration & oversight.','#/for-organizations']
     ].map(([t,i,p,url])=>`<a class="card hover clickable reveal" href="${url}" data-nav>${ic(i)}<h3>${t}</h3><p>${p}</p></a>`).join('')}
   </div></div>
 </section>

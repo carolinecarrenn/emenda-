@@ -30,7 +30,7 @@ PAGES.featureCatalog=()=>`
       ['07','Measurement & Analytics',3,L('Platform event logging, KPI computation, manager KPI strip.','Platform event logging, KPI computation, manager KPI strip.','イベントlog、KPI計算、manager KPI strip。'),'R1','MVP'],
       ['08','Consent & Privacy',5,L('Onboarding disclosure, consent recording, visibility banner, consent ledger, purpose-scoped re-consent.','Onboarding disclosure, consent recording, visibility banner, consent ledger, purpose-scoped re-consent.','onboarding disclosure、consent記録、visibility banner、consent ledger、目的別再同意。'),'R1–R2','MVP → Roadmap'],
       ['09','Notifications',2,L('In-app unread indicators and push notifications.','In-app unread indicator dan push notification.','アプリ内未読表示、push通知。'),'R1–R2','MVP → Roadmap'],
-      ['10','Administration',1,L('SuperAdmin internal console.','SuperAdmin internal console.','SuperAdmin内部console。'),'R1±','MVP-adjacent'],
+      ['10','Administration',1,L('Super Admin internal console.','Super Admin internal console.','Super Admin内部console。'),'R1±','MVP-adjacent'],
       ['11','Health Log',4,L('Device health integration, wearable × work insights, stress-check worker and employer surfaces.','Device health integration, wearable × work insight, stress-check worker dan employer surface.','health device連携、wearable×work、stress check worker/employer。'),'R3','Roadmap'],
       ['12','Life Log',1,L('Worker-private life records.','Worker-private life record.','worker-private life record。'),'R3+','Vision'],
       ['13','EMENDA Score',2,L('Worker-controlled score and reputation concepts.','Worker-controlled score dan reputation concept.','worker-controlled score、reputation concept。'),'R4','Vision'],

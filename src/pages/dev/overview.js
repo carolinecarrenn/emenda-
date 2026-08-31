@@ -110,12 +110,12 @@ PAGES.devOverview=()=>`
     <div class="dev-card">
       <div class="code">Stage 1 DRD v2.0</div>
       <h3>${L('A deliberately small MVP','MVP yang sengaja kecil','意図的に小さいMVP')}</h3>
-      <p>${L('Nine worker and admin screens in total (W-01 to W-06, A-01 to A-04a), caregiving only, explicitly not a polished integrated platform. The screen set is described as a closed set: no other screens exist.','Total sembilan layar worker dan admin (W-01 sampai W-06, A-01 sampai A-04a), khusus caregiving, dan secara eksplisit bukan platform terintegrasi yang dipoles. Set layarnya disebut tertutup: tidak ada layar lain.','worker・admin合わせて9画面（W-01〜W-06、A-01〜A-04a）、介護のみ。「磨き込んだ統合プラットフォーム」は明確に対象外。画面集合は閉じている。')}</p>
+      <p>${L('Nine worker and company admin screens in total (W-01 to W-06, A-01 to A-04a), caregiving only, explicitly not a polished integrated platform. The screen set is described as a closed set: no other screens exist.','Total sembilan layar worker dan company admin (W-01 sampai W-06, A-01 sampai A-04a), khusus caregiving, dan secara eksplisit bukan platform terintegrasi yang dipoles. Set layarnya disebut tertutup: tidak ada layar lain.','worker・company admin合わせて9画面（W-01〜W-06、A-01〜A-04a）、介護のみ。「磨き込んだ統合プラットフォーム」は明確に対象外。画面集合は閉じている。')}</p>
     </div>
     <div class="dev-card">
       <div class="code">Frontend</div>
       <h3>${L('A full multi-role platform','Platform multi-role penuh','多役割の本格プラットフォーム')}</h3>
-      <p>${L('158 routes across worker, manager, admin, marketing, auth and onboarding — far beyond the Stage 1 screen set, and built from a later and much larger Figma file.','158 route mencakup worker, manager, admin, marketing, auth, dan onboarding — jauh melampaui set layar Stage 1, dan dibangun dari file Figma yang lebih baru dan jauh lebih besar.','worker・manager・admin・marketing・認証・オンボーディングで158ルート。Stage 1の画面集合をはるかに超え、より新しく大きいFigmaから構築されている。')}</p>
+      <p>${L('158 routes across worker, manager, company admin, marketing, auth and onboarding — far beyond the Stage 1 screen set, and built from a later and much larger Figma file.','158 route mencakup worker, manager, company admin, marketing, auth, dan onboarding — jauh melampaui set layar Stage 1, dan dibangun dari file Figma yang lebih baru dan jauh lebih besar.','worker・manager・company admin・marketing・認証・オンボーディングで158ルート。Stage 1の画面集合をはるかに超え、より新しく大きいFigmaから構築されている。')}</p>
     </div>
   </div>
   ${derived('Neither source is wrong; they were written at different times for different purposes. When quoting scope, always name which one you are quoting.','Tidak ada sumber yang salah; keduanya ditulis pada waktu dan untuk tujuan berbeda. Saat mengutip scope, selalu sebutkan sumber mana yang dikutip.','どちらも誤りではなく、時期も目的も異なる。スコープを引用する際は、必ず出典を明示すること。')}

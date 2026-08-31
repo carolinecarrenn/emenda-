@@ -12,7 +12,7 @@ PAGES.platformArchitecture=()=>`
   <h2>How the current product stack fits together.</h2>
   <p class="lede">The exact integration contracts can evolve, but the current implementation direction can be explained through five technical zones: client, application/API, data, AI/knowledge, and infrastructure.</p>
   <div class="arch-flow reveal">
-    <div class="arch-box"><b>Users & Roles</b><span>Worker mobile · Manager · Employer · Admin<br><br>Bahasa Indonesia · English · 日本語</span></div>
+    <div class="arch-box"><b>Users & Roles</b><span>Worker mobile · Manager · Company Admin · Super Admin<br><br>Bahasa Indonesia · English · 日本語</span></div>
     <div class="arch-arrow">→</div>
     <div class="arch-box"><b>Frontend Client</b><span>React 19.2 · TypeScript 6.0 · Vite 8.2 · Tailwind CSS 4.3<br><br>Responsive web / PWA-first experience</span></div>
     <div class="arch-arrow">→</div>
@@ -59,7 +59,7 @@ PAGES.platformArchitecture=()=>`
   <span class="eyebrow">Application layers</span>
   <h2>Four product layers sit on top of the delivery stack.</h2>
   <div class="layers">
-    ${[['l1','Experience Layer','Role-specific surfaces',['Worker Mobile','Manager Web','Employer Views','Admin / Super Admin']],['l2','AI & Knowledge Layer','Contextual assistance',['Emenda Assistant','Knowledge retrieval','Source-aware answer','Permission-aware action','Outcome follow-up']],['l3','Application Layer','Core business capabilities',['Identity','Career / readiness','Daily reports','Communication','Follow-up','Notifications','Evidence / history']],['l4','Platform Foundation','Shared rules and services',['Authentication','Roles & permissions','Localization','Audit trail','Data boundaries','API / integration']]].map(([c,n,s,items])=>`<div class="layer ${c} reveal"><div class="ln">${n}<span>${s}</span></div><div class="items">${items.map(x=>`<span class="p">${x}</span>`).join('')}</div></div>`).join('')}
+    ${[['l1','Experience Layer','Role-specific surfaces',['Worker Mobile','Manager Web','Company Admin Console','Super Admin Console']],['l2','AI & Knowledge Layer','Contextual assistance',['Emenda Assistant','Knowledge retrieval','Source-aware answer','Permission-aware action','Outcome follow-up']],['l3','Application Layer','Core business capabilities',['Identity','Career / readiness','Daily reports','Communication','Follow-up','Notifications','Evidence / history']],['l4','Platform Foundation','Shared rules and services',['Authentication','Roles & permissions','Localization','Audit trail','Data boundaries','API / integration']]].map(([c,n,s,items])=>`<div class="layer ${c} reveal"><div class="ln">${n}<span>${s}</span></div><div class="items">${items.map(x=>`<span class="p">${x}</span>`).join('')}</div></div>`).join('')}
   </div>
 </div></section>
 
@@ -68,7 +68,7 @@ PAGES.platformArchitecture=()=>`
   <h2>The person is durable; employment access is contextual.</h2>
   <div class="grid g2" style="margin-top:30px">
     <div class="card reveal"><h3>Worker-owned identity</h3><p>The worker identity is designed as a durable record. An employer relationship is a separate, time-bound connection, so changing employers does not require recreating the person from zero.</p></div>
-    <div class="card reveal"><h3>Organization-aware access</h3><p>Manager and employer access should follow role and organization context. Private worker information must not become visible simply because the UI has a route to it.</p></div>
+    <div class="card reveal"><h3>Organization-aware access</h3><p>Manager and Company Admin access should follow role and organization context. Private worker information must not become visible simply because the UI has a route to it.</p></div>
     <div class="card reveal"><h3>Original content integrity</h3><p>Translation, transcription, summarization, and AI assistance are additive layers. Original messages and reports remain the source record rather than being silently overwritten.</p></div>
     <div class="card reveal"><h3>Audit-friendly transitions</h3><p>Verification, follow-up, decisions, actions, and resolution states should leave timestamps and history so the operational lifecycle is explainable later.</p></div>
   </div>

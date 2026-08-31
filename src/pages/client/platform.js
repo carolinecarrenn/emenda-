@@ -35,7 +35,7 @@ PAGES.platform=()=>`
   <span class="eyebrow">Architecture</span>
   <h2>Four layers, one coherent system.</h2>
   <div class="layers">
-    ${[['l1','Experience','What people use',['Worker Mobile','Manager Web','Employer','Admin']],['l2','AI','Assistance layer',['Assistant','Retrieval / Knowledge','Context','Actions','Follow-up']],['l3','Application','Core capabilities',['Identity','Reports','Communication','Follow-up','Notifications','Career','Knowledge']],['l4','Platform','Foundations',['Auth','Permissions','Audit','Multilingual','Data','API / Integration']]]
+    ${[['l1','Experience','What people use',['Worker Mobile','Manager Web','Company Admin','Super Admin']],['l2','AI','Assistance layer',['Assistant','Retrieval / Knowledge','Context','Actions','Follow-up']],['l3','Application','Core capabilities',['Identity','Reports','Communication','Follow-up','Notifications','Career','Knowledge']],['l4','Platform','Foundations',['Auth','Permissions','Audit','Multilingual','Data','API / Integration']]]
     .map(([c,n,s,items])=>`<div class="layer ${c} reveal"><div class="ln">${n}<span>${s}</span></div><div class="items">${items.map(x=>`<span class="p">${x}</span>`).join('')}</div></div>`).join('')}
   </div>
   <div style="margin-top:30px">

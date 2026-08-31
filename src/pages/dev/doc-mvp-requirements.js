@@ -59,7 +59,7 @@ ${L('worker-subject bidirectional translated communication','komunikasi terjemah
   <h2>${L('Five entities, and one key that carries the whole thesis.','Lima entitas, dan satu kunci yang memikul seluruh tesisnya.','5エンティティと、論全体を支える1つのキー。')}</h2>
   <div class="cmd">
 Organization  <span class="c">id · name · industry</span>
-User          <span class="c">id · org_id · role(worker/manager) · preferred_language</span>
+User          <span class="c">id · org_id · role(worker / manager / company_admin / super_admin) · preferred_language</span>
 Message       <span class="c">thread_id · body · source_language · translated_body</span>
               <span class="c">message_kind(template/free) · intent_tag(report/question/consult)</span>
 WorkRecord    <span class="c">template_id · structured_fields(JSON) · free_text · source_language</span>

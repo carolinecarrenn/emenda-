@@ -13,7 +13,7 @@ PAGES.resources=()=>`
   <div class="grid g3" style="margin-top:30px">
     <div class="card reveal"><h3 style="color:var(--emerald)">Done ✓</h3><ul class="rlist" style="margin-top:12px">${['UX / Figma','Worker app (core flows)','Daily report loop'].map(x=>`<li><span class="ck">✓</span>${x}</li>`).join('')}</ul><span class="st-tag a" style="display:inline-block;margin-top:12px">Current product evidence</span></div>
     <div class="card reveal" style="background:var(--amber-tint);border-color:#ecd9b3"><h3 style="color:var(--amber)">In progress ◐</h3><ul class="rlist" style="margin-top:12px">${['Manager app','AI Assistant','Knowledge / RAG'].map(x=>`<li><span class="ck" style="background:var(--amber-tint);color:var(--amber)">◐</span>${x}</li>`).join('')}</ul><span class="st-tag m" style="display:inline-block;margin-top:12px">Sync with latest release notes</span></div>
-    <div class="card reveal"><h3 style="color:var(--ink-faint)">Next ○</h3><ul class="rlist" style="margin-top:12px">${['Admin console','Backend / API hardening','QA · Integration · Pilot'].map(x=>`<li><span class="ck" style="background:var(--paper2);color:var(--ink-faint)">○</span>${x}</li>`).join('')}</ul><span class="st-tag m" style="display:inline-block;margin-top:12px">Sync with latest release notes</span></div>
+    <div class="card reveal"><h3 style="color:var(--ink-faint)">Next ○</h3><ul class="rlist" style="margin-top:12px">${['Company & Super Admin consoles','Backend / API hardening','QA · Integration · Pilot'].map(x=>`<li><span class="ck" style="background:var(--paper2);color:var(--ink-faint)">○</span>${x}</li>`).join('')}</ul><span class="st-tag m" style="display:inline-block;margin-top:12px">Sync with latest release notes</span></div>
   </div>
 </div></section>
 
@@ -39,7 +39,7 @@ PAGES.resources=()=>`
   <span class="eyebrow">FAQ</span>
   <h2 style="text-align:center;margin:0 auto">Common questions.</h2>
   <div class="faq">
-    ${[['Is Emenda just an HR app or a chatbot?','No. Emenda is a connected ecosystem linking workers, managers, employers, and organizations across communication, reports, follow-up, and AI assistance — one operating layer, not a single-purpose tool.'],
+    ${[['Is Emenda just an HR app or a chatbot?','No. Emenda is a connected ecosystem linking workers, managers, and organizations across communication, reports, follow-up, and AI assistance — one operating layer, not a single-purpose tool.'],
        ['What languages are supported?','Bahasa Indonesia, English, and Japanese, with cross-language communication and AI assistance in each.'],
        ['Does the AI take actions on its own?','No. Sensitive actions (location, call, email, SMS, calendar, contacts) always ask for explicit user permission first.'],
        ['Is it production-ready today?','Parts are further along than others. We label capabilities honestly as Available, MVP/In development, or Planned — nothing is overstated.'],

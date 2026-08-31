@@ -214,7 +214,7 @@ const buildPillars = () => [
       ['M09', L('Notifications','Notifikasi','通知'), 2,
         L('In-app unread indicators and push notifications.','Indikator unread in-app dan push notification.','アプリ内未読表示とプッシュ通知。'), 'R1–R2'],
       ['M10', L('Administration','Administrasi','管理'), 1,
-        L('SuperAdmin internal console.','SuperAdmin internal console.','SuperAdmin内部コンソール。'), 'R1']
+        L('Super Admin internal console.','Konsol internal Super Admin.','Super Admin内部コンソール。'), 'R1']
     ],
     built:[
       ['12', L('routes','route','ルート'), L('Worker notifications · 11 company admin routes.','Notifikasi worker · 11 route company admin.','労働者通知・企業管理11ルート。')],
